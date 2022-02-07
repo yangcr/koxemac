@@ -1,0 +1,57 @@
+/* header {
+    background-color: $clr-white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 125px;
+    padding: 2em 0;
+    gap: 3em;
+    z-index: 1000;
+
+    .logo {
+
+        width: 125px;
+        min-width: 100px;
+        border-right: 1px solid $clr-lightGrey;
+        padding-right: 25px;
+    }
+
+    .header__main {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        font-size: 23px;
+
+
+        .header__info {
+            color: $clr-brand;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 3em;
+
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+
+            ul li {
+            display: inline-block;
+            margin-right: 1em;
+            }
+        }
+    }
+
+
+} */
+
+nav {
+    a img {
+        width: 80px;
+    }
+}
