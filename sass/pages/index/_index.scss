@@ -6,13 +6,14 @@
         }
     }
 }
+
 #productosDestacados {
 
     background-image: url(../images/carousel-bg.jpg);
     background-attachment: fixed;
     height: 900px;
     h2 {
-        background-color: $clr-brand;
+        background-color: $clr-black;
         color: $clr-white;
         font-size: 3em;
         text-align: center;
@@ -23,6 +24,7 @@
         color: $clr-white;
     }
     a {
+
         display: inline-block;
         text-align: center;
         padding: 0.7em 2em;
@@ -71,12 +73,13 @@
 
 #productosMarca {
     h2 {
-        background-color:$clr-black;
+        background-color:$clr-brand;
         color: $clr-white;
         font-size: 3em;
         text-align: center;
     }
     .banner{
+        margin-bottom: 4em;
         h3{
         color: $clr-black;
     }

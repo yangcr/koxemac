@@ -1,4 +1,4 @@
-/* header {
+header {
     background-color: $clr-white;
     position: sticky;
     top: 0;
@@ -8,7 +8,7 @@
     flex-direction: row;
     justify-content: center;
     max-height: 125px;
-    padding: 2em 0;
+    padding: 1.2em 0;
     gap: 3em;
     z-index: 1000;
 
@@ -23,7 +23,7 @@
     .header__main {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+
         font-size: 23px;
 
 
@@ -31,8 +31,11 @@
             color: $clr-brand;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             gap: 3em;
+            a {
+                color: $clr-black;
+            }
 
         }
 
@@ -40,18 +43,15 @@
             display: flex;
             flex-direction: row;
 
-            ul li {
-            display: inline-block;
-            margin-right: 1em;
+            ul {
+                li {
+                display: inline-block;
+                padding: 0 .8em;
+                    a {
+                        color: $clr-black;
+                    }
+                }
             }
         }
-    }
-
-
-} */
-
-nav {
-    a img {
-        width: 80px;
     }
 }
