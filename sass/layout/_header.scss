@@ -1,57 +1,74 @@
 header {
-    background-color: $clr-white;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
+  background-color: $clr-white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 125px;
+  padding: 1.2em 0;
+  gap: 3em;
+  z-index: 1000;
+
+  .logo {
+    width: 125px;
+    min-width: 100px;
+    border-right: 1px solid $clr-lightGrey;
+    padding-right: 25px;
+  }
+
+  .header__main {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-height: 125px;
-    padding: 1.2em 0;
-    gap: 3em;
-    z-index: 1000;
+    flex-direction: column;
 
-    .logo {
+    font-size: 23px;
 
-        width: 125px;
-        min-width: 100px;
-        border-right: 1px solid $clr-lightGrey;
-        padding-right: 25px;
+    .header__info {
+      color: $clr-brand;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 3em;
+      a {
+        color: $clr-black;
+      }
     }
 
-    .header__main {
+    nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-align: center;
+        height: 1.2em;
 
-        font-size: 23px;
-
-
-        .header__info {
-            color: $clr-brand;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            gap: 3em;
+      ul {
+        li {
+          display: inline-block;
+          a {
+            color: $clr-black;
+            margin: 0 0.8em;
+          }
+          .submenu {
+            position: absolute;
+            display: none;
+            background: $clr-white;
+            padding: 1em;
+            color: $clr-black;
+            text-align: left;
+            border-radius: 5px;
             a {
-                color: $clr-black;
+              margin: 0;
             }
 
+          }
         }
-
-        nav{
+        li:hover .submenu {
             display: flex;
-            flex-direction: row;
-
-            ul {
-                li {
-                display: inline-block;
-                padding: 0 .8em;
-                    a {
-                        color: $clr-black;
-                    }
-                }
-            }
-        }
+            flex-direction: column;
+          }
+      }
     }
+  }
 }
