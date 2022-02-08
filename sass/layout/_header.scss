@@ -22,7 +22,6 @@ header {
   .header__main {
     display: flex;
     flex-direction: column;
-
     font-size: 23px;
 
     .header__info {
@@ -30,7 +29,12 @@ header {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      gap: 3em;
+      margin: 0 0.8em;
+      gap: 2em;
+
+      p {
+        font-size: 1.1em;
+      }
       a {
         color: $clr-black;
       }

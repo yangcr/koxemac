@@ -275,7 +275,12 @@ header .header__main .header__info {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 3em;
+  margin: 0 0.8em;
+  gap: 2em;
+}
+
+header .header__main .header__info p {
+  font-size: 1.1em;
 }
 
 header .header__main .header__info a {
