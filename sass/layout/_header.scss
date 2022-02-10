@@ -1,93 +1,155 @@
 header {
-  background-color: $clr-white;
+  background: $clr-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .9em 2.3em;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  max-height: 125px;
-  padding: 1.2em 0;
-  gap: 3em;
   z-index: 1000;
-  @media (max-width: 1020px) {
-    align-items: center;
-  }
 
-  @media (max-width: 675px) {
-    
-  }
+  .nav__btn {
+      width: 40px;
+      display: block;
+      fill: $clr-brand;
 
-
-  }
-
-  .logo {
-    max-width: 125px;
-    min-width: 75px;
-    border-right: 1px solid $clr-lightGrey;
-    padding-right: 25px;
-  }
-
-  .header__main {
-    display: flex;
-    flex-direction: column;
-    font-size: 23px;
-
-    .header__info {
-      color: $clr-brand;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin: 0 0.8em;
-      gap: 2em;
-
-      p {
-        font-size: 1em;
+      &-close{
+          fill: $clr-white;
+          float: right;
+          margin: 1.5em 2.3em;
       }
-      a {
-        color: $clr-black;
-      }
+  }
 
-      @media (max-width: 1020px) {
-        display: none;
-          margin: 0;
-      }
-    }
+  .navLogo {
+      width: 100px;
+  }
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        text-align: center;
-        height: 1.2em;
+  nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 65vw;
+      background: $clr-brand;
+      z-index: 1000;
+      display: none;
 
-      ul {
-        li {
-          display: inline-block;
+      ul li a {
+        color: $clr-white;
+
+        .submenu {
+          position: absolute;
+          display: none;
+          background: $clr-white;
+          padding: 1em;
+          color: $clr-black;
+          text-align: left;
+          border-radius: 5px;
           a {
-            color: $clr-black;
-            margin: 0 0.8em;
-          }
-          .submenu {
-            position: absolute;
-            display: none;
-            background: $clr-white;
-            padding: 1em;
-            color: $clr-black;
-            text-align: left;
-            border-radius: 5px;
-            a {
-              margin: 0;
-            }
-
-          }
-        }
-        li:hover .submenu {
-            display: flex;
-            flex-direction: column;
+            margin: 0;
           }
       }
-    }
-}
 
+      &.nav-open {
+          display: block;
+      }
+
+      .menu {
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+          margin-top: 20vh;
+          margin-left: 3em;
+
+
+          li {
+              color: $clr-white;
+              letter-spacing: .15em;
+              opacity: 0.6;
+
+              &.active {
+                  font-weight: 800;
+                  opacity: 1;
+              }
+
+              &:hover {
+                  text-decoration: 2px underline;
+                  text-underline-offset: 7px;
+              }
+
+          }
+      }
+  }
+  
+
+  @media (min-width: 700px) {
+
+      nav {
+          width: 45vw;
+          ul li a {
+            color: $clr-black;
+          }
+
+          .menu {
+            & .submenu{
+              li {
+                &:hover {
+                  color: black;
+                }
+              }
+            }
+          }
+      }
+  }
+
+  @media (min-width: 900px) {
+
+      & {
+          position: sticky;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1000;
+      
+          .nav__btn {
+              width: 40px;
+              display: block;
+              fill: $clr-white;
+      
+              &-close{
+                  float: right;
+                  margin: 1.5em 2.3em;
+              }
+          }
+      }
+
+      .navLogo {
+          width: 125px;
+      }
+      .nav__btn {
+          display: none;
+      }
+
+      nav{
+          all: unset;
+          height: 1.2em;
+          font-size: .7em;
+
+          .menu {
+              margin: unset;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: nowrap;
+
+              & .sub-menu {
+                  display: block;
+                  flex-direction: column;
+                  text-align: center;
+              }
+          }
+      }
+  }
+}
+}
