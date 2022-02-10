@@ -1,4 +1,4 @@
-#heroCarrousel {
+.heroCarrousel {
     .carousel-item {
         height: 500px;
         img {
@@ -7,11 +7,11 @@
     }
 }
 
-#productosDestacados {
+.highlightProducts {
 
     background-image: url(../images/carousel-bg.jpg);
     background-attachment: fixed;
-    height: 900px;
+
     h2 {
         background-color: $clr-black;
         color: $clr-white;
@@ -71,7 +71,7 @@
 
 }
 
-#productosMarca {
+.productosMarca {
     h2 {
         background-color:$clr-brand;
         color: $clr-white;
@@ -129,6 +129,7 @@
 
     display: flex;
     flex-direction: column;
+    padding: 5em 0;
 
     .directionContainer {
 

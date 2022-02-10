@@ -11,10 +11,20 @@ header {
   padding: 1.2em 0;
   gap: 3em;
   z-index: 1000;
+  @media (max-width: 1020px) {
+    align-items: center;
+  }
+
+  @media (max-width: 675px) {
+    
+  }
+
+
+  }
 
   .logo {
-    width: 125px;
-    min-width: 100px;
+    max-width: 125px;
+    min-width: 75px;
     border-right: 1px solid $clr-lightGrey;
     padding-right: 25px;
   }
@@ -33,10 +43,15 @@ header {
       gap: 2em;
 
       p {
-        font-size: 1.1em;
+        font-size: 1em;
       }
       a {
         color: $clr-black;
+      }
+
+      @media (max-width: 1020px) {
+        display: none;
+          margin: 0;
       }
     }
 
@@ -74,5 +89,5 @@ header {
           }
       }
     }
-  }
 }
+
