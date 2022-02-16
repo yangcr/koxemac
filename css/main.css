@@ -257,7 +257,7 @@ header {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 650px) {
   header {
     padding: 3em 2em;
   }
