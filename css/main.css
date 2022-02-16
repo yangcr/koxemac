@@ -257,11 +257,23 @@ header {
   }
 }
 
+@media (max-width: 540px) {
+  header {
+    padding: 3em 2em;
+  }
+}
+
 .logo {
   max-width: 125px;
   min-width: 75px;
   border-right: 1px solid #cacdd1;
-  padding-right: 25px;
+  padding: 0 25px;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 70px;
+  }
 }
 
 .header__main {
@@ -305,7 +317,7 @@ header {
   }
 }
 
-.header__main nav {
+.header__main nav.desktop__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,16 +331,16 @@ header {
   height: 1.2em;
 }
 
-.header__main nav ul li {
+.header__main nav.desktop__nav ul li {
   display: inline-block;
 }
 
-.header__main nav ul li a {
+.header__main nav.desktop__nav ul li a {
   color: #0f0f0f;
   margin: 0 0.8em;
 }
 
-.header__main nav ul li .submenu {
+.header__main nav.desktop__nav ul li .submenu {
   position: absolute;
   display: none;
   background: #fafafa;
@@ -338,11 +350,11 @@ header {
   border-radius: 5px;
 }
 
-.header__main nav ul li .submenu a {
+.header__main nav.desktop__nav ul li .submenu a {
   margin: 0;
 }
 
-.header__main nav ul li:hover .submenu {
+.header__main nav.desktop__nav ul li:hover .submenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

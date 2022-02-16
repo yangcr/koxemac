@@ -15,8 +15,8 @@ header {
     align-items: center;
   }
 
-  @media (max-width: 675px) {
-    
+  @media (max-width: 650px) {
+    padding: 3em 2em;
   }
 
 
@@ -26,7 +26,11 @@ header {
     max-width: 125px;
     min-width: 75px;
     border-right: 1px solid $clr-lightGrey;
-    padding-right: 25px;
+    padding: 0 25px;
+
+    @media (max-width: 680px) {
+    width: 70px;
+    }
   }
 
   .header__main {
@@ -55,7 +59,7 @@ header {
       }
     }
 
-    nav {
+    nav.desktop__nav {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
