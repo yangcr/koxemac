@@ -284,7 +284,7 @@ header .header__desktop .header__main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 23px;
+  font-size: 18px;
 }
 
 header .header__desktop .header__main .header__info {
