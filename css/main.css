@@ -225,13 +225,17 @@ li {
   font-size: 1.6em;
 }
 
-header .header__desktop {
-  background-color: #fafafa;
+header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
+}
+
+header .header__desktop {
+  background-color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +249,6 @@ header .header__desktop {
   max-height: 125px;
   padding: 1.2em 0;
   gap: 3em;
-  z-index: 1000;
 }
 
 @media (max-width: 1020px) {
@@ -386,12 +389,6 @@ header .header__mobile {
       -ms-flex-align: center;
           align-items: center;
   padding: .9em 2.3em;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
 }
 
 header .header__mobile .nav__btn {
