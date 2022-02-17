@@ -14,65 +14,67 @@
 
 <body>
 
-  <header class="header__mobile shadow-lg">
-    <a href="/"><img src="./images/logo.png" alt="logo de Koxemac" class="navLogo"></a>
+  <header>
 
-    <svg class="nav__btn nav_btn-open" id="navOpen" viewBox="0 0 32 32">
-        <path
-            d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
-    </svg>
+    <div class="header__desktop shadow-lg">
+      <div><a href="./index.html"><img src="./images/logo.png" alt="logo Koxemac" class="logo"></a></div>
+  
+  
+      <div class="header__main">
+        <div class="header__info">
+          <p><span class="iconify" data-icon="fontisto:whatsapp"> </span> Realizá tu consulta al 11-5109-6101</p>
+          <p><span class="iconify" data-icon="clarity:home-solid"></span> Bogotá 2960, Floresta, CABA</p>
+  
+        </div>
+  
+        <nav class="desktop__nav">
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./pages/personalizados.html">Catalogo</a>
+            <ul class="submenu">
+              <li><a href="">Elasticos</a></li>
+              <li><a href="">Cierres</a></li>
+              <li><a href="">Hilos</a></li>
+              <li><a href="">Otros</a></li>
+            </ul>
+          </li>
+            <li><a href="./pages/personalizados.html">Personalizados</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+  
+      </div>
+  
+    </div>
 
-    <nav id="nav">
-        <svg viewBox="0 0 24 24" class="nav__btn nav__btn-close" id="navClose">
-            <path
-                d="M14.8,12l3.6-3.6c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L12,9.2L8.4,5.6c-0.8-0.8-2-0.8-2.8,0   c-0.8,0.8-0.8,2,0,2.8L9.2,12l-3.6,3.6c-0.8,0.8-0.8,2,0,2.8C6,18.8,6.5,19,7,19s1-0.2,1.4-0.6l3.6-3.6l3.6,3.6   C16,18.8,16.5,19,17,19s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L14.8,12z" />
-        </svg>
-
-        <ul class="menu">
-            <li><a href="./index.html" class="active">Inicio</a></li>
-            <li><a href="./pages/la-empresa.html">Catálogo</a></li>
-            <li><a href="./pages/desarrollos.html">Personalizados</a>
-            </li>
-            <li><a href="./pages/finalizados.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="header__mobile shadow-lg">
+      <a href="/"><img src="./images/logo.png" alt="logo de Koxemac" class="navLogo"></a>
+      <svg class="nav__btn nav_btn-open" id="navOpen" viewBox="0 0 32 32">
+          <path
+              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+      </svg>
+      <nav id="nav">
+          <svg viewBox="0 0 24 24" class="nav__btn nav__btn-close" id="navClose">
+              <path
+                  d="M14.8,12l3.6-3.6c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L12,9.2L8.4,5.6c-0.8-0.8-2-0.8-2.8,0   c-0.8,0.8-0.8,2,0,2.8L9.2,12l-3.6,3.6c-0.8,0.8-0.8,2,0,2.8C6,18.8,6.5,19,7,19s1-0.2,1.4-0.6l3.6-3.6l3.6,3.6   C16,18.8,16.5,19,17,19s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L14.8,12z" />
+          </svg>
+          <ul class="menu">
+              <li><a href="./index.html" class="active">Inicio</a></li>
+              <li><a href="./pages/la-empresa.html">Catálogo</a></li>
+              <li><a href="./pages/desarrollos.html">Personalizados</a>
+              </li>
+              <li><a href="./pages/finalizados.html">Contacto</a>
+              </li>
+          </ul>
+      </nav>
+    </div>
 
 </header>
 
-<header class="header__desktop shadow-lg">
-    <div><a href="./index.html"><img src="./images/logo.png" alt="logo Koxemac" class="logo"></a></div>
 
-
-    <div class="header__main">
-      <div class="header__info">
-        <p><span class="iconify" data-icon="fontisto:whatsapp"> </span> Realizá tu consulta al 11-5109-6101</p>
-        <p><span class="iconify" data-icon="clarity:home-solid"></span> Bogotá 2960, Floresta, CABA</p>
-
-      </div>
-
-      <nav class="desktop__nav">
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/personalizados.html">Catalogo</a>
-          <ul class="submenu">
-            <li><a href="">Elasticos</a></li>
-            <li><a href="">Cierres</a></li>
-            <li><a href="">Hilos</a></li>
-            <li><a href="">Otros</a></li>
-          </ul>
-        </li>
-          <li><a href="./pages/personalizados.html">Personalizados</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-
-    </div>
-
-  </header>
 
 <main>
-    <section class="heroCarrousel">
+    <section class="heroCarrousel w-100">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -98,7 +100,7 @@
       </div>
     </section>
 
-    <section class="highlightProducts">
+    <section class="highlightProducts w-100">
 
 
       <h2 class="py-4">PRODUCTOS DESTACADOS</h2>
@@ -191,7 +193,7 @@
         </div>
       </div>
 
-      <div class="banner">
+      <div class="banner w-100">
 
 
         <h3>Mirá todos nuestros productos</h3>
@@ -199,7 +201,7 @@
       </div>
     </section>
 
-    <section class="productosMarca">
+    <section class="productosMarca w-100">
 
       <h2 class="py-4">PERSONALIZADAS CON TU MARCA</h2>
       <div class="card-gallery my-4">
@@ -248,7 +250,7 @@
         </div>
       </div>
 
-      <div class="banner">
+      <div class="banner w-100">
 
         <h3>PRODUCTOS ESPECIALES PARA VOS</h3>
         <p>Para que tu marca destaque</p>
@@ -285,7 +287,7 @@
 
 
 
-<footer class="flex row center">
+<footer class="py-4">
     <img src="./images/logo.png" alt="Logo de Koxemac" class="m-auto logoFooter">
   </footer>
 

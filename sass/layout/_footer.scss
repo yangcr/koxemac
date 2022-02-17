@@ -1,9 +1,10 @@
 footer {
+    display: flex;
     background: $clr-lightGrey;
-    padding: 1.3em;
 
 
     img.logoFooter {
         width: 60px;
+        margin: auto;
     }
 }

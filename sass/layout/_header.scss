@@ -1,4 +1,6 @@
-.header__desktop {
+header {
+  
+  .header__desktop {
   background-color: $clr-white;
   position: sticky;
   top: 0;
@@ -20,7 +22,7 @@
   }
   .logo {
     max-width: 125px;
-    min-width: 75px;
+    min-width: 85px;
     border-right: 1px solid $clr-lightGrey;
     padding: 0 25px;
 
@@ -47,6 +49,8 @@
       }
       a {
         color: $clr-black;
+
+        
       }
 
       @media (max-width: 1020px) {
@@ -68,6 +72,15 @@
           a {
             color: $clr-black;
             margin: 0 0.8em;
+            &.active {
+              font-weight: 800;
+              opacity: 1;
+          }
+
+          &:hover {
+              text-decoration: 2px underline;
+              text-underline-offset: 7px;
+          }
           }
           .submenu {
             position: absolute;
@@ -172,3 +185,4 @@
 
 }
 
+}
