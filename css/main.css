@@ -199,7 +199,7 @@ li {
 }
 
 .card {
-  width: 350px;
+  width: 600px;
   margin: .8em;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -214,7 +214,6 @@ li {
 
 .banner {
   text-align: center;
-  margin-bottom: 3em;
 }
 
 .banner h3 {
@@ -477,11 +476,8 @@ footer img.logoFooter {
   margin: auto;
 }
 
-.heroCarrousel .carousel-item {
-  height: 65vh;
-}
-
 .heroCarrousel .carousel-item img {
+  height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -489,6 +485,10 @@ footer img.logoFooter {
 .highlightProducts {
   background-image: url(../images/carousel-bg.jpg);
   background-attachment: fixed;
+}
+
+.highlightProducts .highlights__container {
+  padding: 3em 0;
 }
 
 .highlightProducts h2 {

@@ -1,7 +1,7 @@
 .heroCarrousel {
     .carousel-item {
-        height: 65vh;
         img {
+            height: 50vh;
             object-fit: cover;
         }
     }
@@ -11,6 +11,10 @@
 
     background-image: url(../images/carousel-bg.jpg);
     background-attachment: fixed;
+
+    .highlights__container {
+        padding: 3em 0;
+    }
 
     h2 {
         background-color: $clr-black;
