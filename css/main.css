@@ -226,7 +226,7 @@ li {
   font-size: 1.6em;
 }
 
-header {
+.header__desktop {
   background-color: #fafafa;
   position: -webkit-sticky;
   position: sticky;
@@ -250,7 +250,7 @@ header {
 }
 
 @media (max-width: 1020px) {
-  header {
+  .header__desktop {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -258,12 +258,12 @@ header {
 }
 
 @media (max-width: 650px) {
-  header {
-    padding: 3em 2em;
+  .header__desktop {
+    display: none;
   }
 }
 
-.logo {
+.header__desktop .logo {
   max-width: 125px;
   min-width: 75px;
   border-right: 1px solid #cacdd1;
@@ -271,12 +271,12 @@ header {
 }
 
 @media (max-width: 680px) {
-  .logo {
+  .header__desktop .logo {
     width: 70px;
   }
 }
 
-.header__main {
+.header__desktop .header__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +287,7 @@ header {
   font-size: 23px;
 }
 
-.header__main .header__info {
+.header__desktop .header__main .header__info {
   color: #db0a0d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,22 +302,22 @@ header {
   gap: 2em;
 }
 
-.header__main .header__info p {
+.header__desktop .header__main .header__info p {
   font-size: 1em;
 }
 
-.header__main .header__info a {
+.header__desktop .header__main .header__info a {
   color: #0f0f0f;
 }
 
 @media (max-width: 1020px) {
-  .header__main .header__info {
+  .header__desktop .header__main .header__info {
     display: none;
     margin: 0;
   }
 }
 
-.header__main nav.desktop__nav {
+.header__desktop .header__main nav.desktop__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,16 +331,16 @@ header {
   height: 1.2em;
 }
 
-.header__main nav.desktop__nav ul li {
+.header__desktop .header__main nav.desktop__nav ul li {
   display: inline-block;
 }
 
-.header__main nav.desktop__nav ul li a {
+.header__desktop .header__main nav.desktop__nav ul li a {
   color: #0f0f0f;
   margin: 0 0.8em;
 }
 
-.header__main nav.desktop__nav ul li .submenu {
+.header__desktop .header__main nav.desktop__nav ul li .submenu {
   position: absolute;
   display: none;
   background: #fafafa;
@@ -350,11 +350,11 @@ header {
   border-radius: 5px;
 }
 
-.header__main nav.desktop__nav ul li .submenu a {
+.header__desktop .header__main nav.desktop__nav ul li .submenu a {
   margin: 0;
 }
 
-.header__main nav.desktop__nav ul li:hover .submenu {
+.header__desktop .header__main nav.desktop__nav ul li:hover .submenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,6 +362,96 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.header__mobile {
+  background: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .9em 2.3em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header__mobile .nav__btn {
+  width: 40px;
+  display: block;
+  fill: #0f0f0f;
+}
+
+.header__mobile .nav__btn-close {
+  float: right;
+  margin: 1.5em 2.3em;
+}
+
+.header__mobile .navLogo {
+  width: 70px;
+}
+
+.header__mobile nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 65vw;
+  background: #cacdd1;
+  z-index: 1000;
+  display: none;
+}
+
+.header__mobile nav.nav-open {
+  display: block;
+}
+
+.header__mobile nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  margin-top: 20vh;
+  margin-left: 3em;
+}
+
+.header__mobile nav .menu .sub-menu {
+  display: none;
+}
+
+.header__mobile nav .menu li a {
+  color: #0f0f0f;
+  letter-spacing: .15em;
+  opacity: 0.6;
+}
+
+.header__mobile nav .menu li a.active {
+  font-weight: 800;
+  opacity: 1;
+}
+
+.header__mobile nav .menu li a:hover {
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
+  text-underline-offset: 7px;
+}
+
+@media (min-width: 651px) {
+  .header__mobile {
+    display: none;
+  }
 }
 
 footer {
