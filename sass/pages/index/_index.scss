@@ -1,169 +1,183 @@
 .heroCarrousel {
-    .carousel-item {
-        img {
-            height: 50vh;
-            object-fit: cover;
-        }
+  .carousel-item {
+    img {
+      height: 50vh;
+      object-fit: cover;
     }
+  }
 }
 
 .highlightProducts {
+  background-image: url(../images/carousel-bg.jpg);
+  background-attachment: fixed;
 
-    background-image: url(../images/carousel-bg.jpg);
-    background-attachment: fixed;
+  .highlights__container {
+    padding: 3em 0;
+  }
 
-    .highlights__container {
-        padding: 3em 0;
+  h2 {
+    background-color: $clr-black;
+    color: $clr-white;
+    font-size: 3em;
+    text-align: center;
+
+    @media (max-width: 870px) {
+      font-size: 2em;
     }
+  }
 
-    h2 {
-        background-color: $clr-black;
-        color: $clr-white;
-        font-size: 3em;
-        text-align: center;
-    }
-
-    .banner{
-        h3{
-        color: $clr-white;
+  .banner {
+    h3 {
+      color: $clr-white;
+      @media (max-width: 870px) {
+        font-size: 2em;
+      }
     }
     a {
-
-        display: inline-block;
-        text-align: center;
-        padding: 0.7em 2em;
-        border: 3px solid $clr-white;
-        border-radius: 2px;
-        position: relative;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-        color: $clr-brand;
-        background: $clr-white;
-        text-decoration: none;
-        transition: 0.3s ease all;
-        z-index: 1;
+      display: inline-block;
+      text-align: center;
+      padding: 0.7em 2em;
+      border: 3px solid $clr-white;
+      border-radius: 2px;
+      position: relative;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+      color: $clr-brand;
+      background: $clr-white;
+      text-decoration: none;
+      transition: 0.3s ease all;
+      z-index: 1;
     }
     a:before {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            right: 50%;
-            bottom: 0;
-            opacity: 0;
-            content: "";
-            z-index: -1;
-          }
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      opacity: 0;
+      content: "";
+      z-index: -1;
+    }
     a:hover,
     a:focus {
-        transition: 0.5s all ease;
-        background-color: $clr-brand;
+      transition: 0.5s all ease;
+      background-color: $clr-brand;
       color: $clr-white;
       border: 3px solid $clr-brand;
     }
     a:hover:before,
     a:focus:before {
-        transition: 0.5s all ease;
+      transition: 0.5s all ease;
       left: 0;
       right: 0;
       opacity: 1;
     }
     a:active {
-        transform: scale(0.9);
+      transform: scale(0.9);
     }
-}
-
-
-
+  }
 }
 
 .productosMarca {
-    h2 {
-        background-color:$clr-brand;
-        color: $clr-white;
-        font-size: 3em;
-        text-align: center;
+  h2 {
+    background-color: $clr-brand;
+    color: $clr-white;
+    font-size: 3em;
+    text-align: center;
+
+    @media (max-width: 870px) {
+      font-size: 2em;
     }
-    .banner{
-        margin-bottom: 4em;
-        h3{
-        color: $clr-black;
+  }
+  .banner {
+    margin-bottom: 4em;
+    h3 {
+      color: $clr-black;
     }
     a {
-        display: inline-block;
-        text-align: center;
-        padding: 0.7em 2em;
-        border: 3px solid $clr-brand;
-        border-radius: 2px;
-        position: relative;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-        color: $clr-brand;
-        text-decoration: none;
-        transition: 0.3s ease all;
-        z-index: 1;
+      display: inline-block;
+      text-align: center;
+      padding: 0.7em 2em;
+      border: 3px solid $clr-brand;
+      border-radius: 2px;
+      position: relative;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+      color: $clr-brand;
+      text-decoration: none;
+      transition: 0.3s ease all;
+      z-index: 1;
     }
     a:before {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            right: 50%;
-            bottom: 0;
-            opacity: 0;
-            content: "";
-            z-index: -1;
-          }
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      opacity: 0;
+      content: "";
+      z-index: -1;
+    }
     a:hover,
     a:focus {
-        transition: 0.5s all ease;
-        background-color: $clr-brand;
+      transition: 0.5s all ease;
+      background-color: $clr-brand;
       color: white;
     }
     a:hover:before,
     a:focus:before {
-        transition: 0.5s all ease;
+      transition: 0.5s all ease;
       left: 0;
       right: 0;
       opacity: 1;
     }
     a:active {
-        transform: scale(0.9);
+      transform: scale(0.9);
     }
-}
+  }
 }
 
-#dondeEstamos {
+.dondeEstamos {
+  display: flex;
+  flex-direction: column;
+  background: $clr-white;
 
+  h2 {
+      text-align: center;
+      font-size: 3em;
+      color: $clr-white;
+      background: $clr-darkGrey;
+  }
+
+  .directionContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 3em 0;
 
-    .directionContainer {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 5em;
-        padding: 3em 0;
-
-        h2 {
-            background-color:$clr-black;
-            color: $clr-white;
-            font-size: 3em;
-            text-align: center;
-        }
-
-        .contactData {
-            margin-bottom: .5em;
-            h3 {
-                font-size: 2.6em;
-            }
-            p {
-                font-size: 1.7em;
-            }
-            a {
-                color: $clr-brand;
-            }
-        }
+    h3 {
+      text-align: center;
+      background-color: $clr-black;
+      color: $clr-white;
+      font-size: 5em;
+      text-align: center;
     }
 
-
-
+    .contactData {
+      margin-bottom: 0.5em;
+      h3 {
+        font-size: 2.6em;
+      }
+      p {
+        font-size: 1.7em;
+        color: $clr-black;
+        margin-bottom: 1.3em;
+      }
+      a {
+        color: $clr-brand;
+        border: 1px solid $clr-brand;
+        padding: .7em;
+      }
+    }
+  }
 }

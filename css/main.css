@@ -199,7 +199,7 @@ li {
 }
 
 .card {
-  width: 600px;
+  width: 400px;
   margin: .8em;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -207,7 +207,7 @@ li {
 }
 
 .card img {
-  height: 200px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -431,7 +431,7 @@ header .header__mobile nav .menu {
           flex-direction: column;
   gap: 2em;
   margin-top: 20vh;
-  margin-left: 3em;
+  margin-left: 1.2em;
 }
 
 header .header__mobile nav .menu .sub-menu {
@@ -495,8 +495,20 @@ footer img.logoFooter {
   text-align: center;
 }
 
+@media (max-width: 870px) {
+  .highlightProducts h2 {
+    font-size: 2em;
+  }
+}
+
 .highlightProducts .banner h3 {
   color: #fafafa;
+}
+
+@media (max-width: 870px) {
+  .highlightProducts .banner h3 {
+    font-size: 2em;
+  }
 }
 
 .highlightProducts .banner a {
@@ -557,6 +569,12 @@ footer img.logoFooter {
   text-align: center;
 }
 
+@media (max-width: 870px) {
+  .productosMarca h2 {
+    font-size: 2em;
+  }
+}
+
 .productosMarca .banner {
   margin-bottom: 4em;
 }
@@ -614,7 +632,7 @@ footer img.logoFooter {
           transform: scale(0.9);
 }
 
-#dondeEstamos {
+.dondeEstamos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,9 +640,17 @@ footer img.logoFooter {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #fafafa;
 }
 
-#dondeEstamos .directionContainer {
+.dondeEstamos h2 {
+  text-align: center;
+  font-size: 3em;
+  color: #fafafa;
+  background: #404040;
+}
+
+.dondeEstamos .directionContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,26 +668,31 @@ footer img.logoFooter {
   padding: 3em 0;
 }
 
-#dondeEstamos .directionContainer h2 {
+.dondeEstamos .directionContainer h3 {
+  text-align: center;
   background-color: #0f0f0f;
   color: #fafafa;
-  font-size: 3em;
+  font-size: 5em;
   text-align: center;
 }
 
-#dondeEstamos .directionContainer .contactData {
-  margin-bottom: .5em;
+.dondeEstamos .directionContainer .contactData {
+  margin-bottom: 0.5em;
 }
 
-#dondeEstamos .directionContainer .contactData h3 {
+.dondeEstamos .directionContainer .contactData h3 {
   font-size: 2.6em;
 }
 
-#dondeEstamos .directionContainer .contactData p {
+.dondeEstamos .directionContainer .contactData p {
   font-size: 1.7em;
+  color: #0f0f0f;
+  margin-bottom: 1.3em;
 }
 
-#dondeEstamos .directionContainer .contactData a {
+.dondeEstamos .directionContainer .contactData a {
   color: #db0a0d;
+  border: 1px solid #db0a0d;
+  padding: .7em;
 }
 /*# sourceMappingURL=main.css.map */
