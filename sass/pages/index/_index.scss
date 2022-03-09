@@ -155,6 +155,16 @@
     gap: 5em;
     padding: 3em 0;
 
+    iframe {
+      width: 600px;
+      height: 450px;
+
+      @media (max-width: 650px) {
+        width: 350px;
+        heigth: 50vh;
+      }
+    }
+
     h3 {
       text-align: center;
       background-color: $clr-black;
@@ -179,5 +189,56 @@
         padding: .7em;
       }
     }
+  }
+
+  @media (max-width: 950px) {
+    .directionContainer {
+      display: flex;
+      flex-direction: column;
+
+      .directionData {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .infoData {
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+
+        .contactData {
+          p {
+            text-align: center;
+          }
+        }
+        .whatsappButton {
+          a {
+            text-align: center;
+          }
+        }
+
+      }
+
+
+    }
+  }
+
+  @media (max-width: 540px) {
+    .directionContainer {
+      .infoData {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+
+      .contactData {
+        p {
+          margin-bottom: .6em;
+        }
+      }
+
+    }
+
   }
 }
