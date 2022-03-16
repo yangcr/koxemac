@@ -13,7 +13,7 @@ h1,
 h2 {
     @include headers-typography;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 h3,
@@ -22,6 +22,7 @@ h5,
 h6 {
     @include headers-typography;
     font-weight: 600;
+    font-size: 2em;
 }
 
 p,

@@ -35,7 +35,7 @@ h2 {
   letter-spacing: .048em;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 h3,
@@ -46,6 +46,7 @@ h6 {
   letter-spacing: .048em;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 2em;
 }
 
 p,
@@ -81,6 +82,11 @@ li {
 .shadow-card {
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.product__shadow {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 /* B U T T O N S */
@@ -762,5 +768,67 @@ footer img.logoFooter {
   .dondeEstamos .directionContainer .contactData p {
     margin-bottom: .6em;
   }
+}
+
+.article__title {
+  text-align: center;
+  background-color: #0f0f0f;
+  color: #fafafa;
+}
+
+.product__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.2em;
+  margin-bottom: 1.3em;
+}
+
+.product__item .product__text-container {
+  width: 80vw;
+}
+
+.product__item .product__text-container .product__subtitle {
+  weight: 800;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+.product__item .carousel {
+  position: relative;
+  width: 80vw;
+  overflow: hidden;
+  /*         .gradientOverlay {
+            position: absolute;
+            border: 1px solid green;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+        } */
+}
+
+.product__item .carousel .item {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product__item .carousel .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */
