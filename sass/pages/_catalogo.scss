@@ -1,4 +1,4 @@
-.article__title {
+.product__title {
     text-align: center;
     background-color: $clr-black;
     color: $clr-white;
@@ -18,7 +18,7 @@
         width: 80vw;
 
         .product__subtitle {
-            weight: 800;
+            font-weight: 800;
             font-size: 1.3em;
             font-style: italic;
         }
@@ -37,16 +37,94 @@
                 object-fit: cover;
             }
         }
+    }
+}
 
-/*         .gradientOverlay {
-            position: absolute;
-            border: 1px solid green;
-            width: 100%;
-            height: 100%;
-            z-index: 1000;
-            background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
-        } */
+.button__product-catalog {
+    margin: .4em;
+    padding: 10px 35px;
+    border: .1px solid $clr-lightGrey;
+    border-radius: 15px;
+    color: $clr-black;
+    z-index: 1;
+    position: relative;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 250ms;
+    overflow: hidden;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      border-radius: 15px;
+      background-color: #212121;
+      z-index: -1;
+      -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+      box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+      transition: all 550ms
+     }
+     &:hover {
+      color: #e8e8e8;
+     }
+  
+     &:hover::before {
+      width: 100%;
+     }
+  
+     &:focus {
+      background: $clr-black;
+      color: $clr-white;
+    }
+  
+    &:active {
+      background: $clr-black;
+      color: $clr-white;
+    }
+  
+    &:target {
+      background: $clr-black;
+      color: $clr-white;
+    }
+   }
+   
+  
+
+
+
+.catalog-button__nav {
+    display: flex;
+    justify-content: center;
+}
+
+   .close-button__pushbar {
+     margin: 1.3em .7em;
+   }
+
+.desktop-catalog {
+    display: none;
+
+    @media (min-width: 800px) {
+        display: unset;
+        
+    }
+}
+
+.mobile-catalog__button {
+    display: unset;
+    text-align: center;
+    background: $clr-brand;
+    color: $clr-white;
+    position: fixed;
+    bottom: 50px;
+    z-index: 5;
+
+    @media (min-width: 800px) {
+        display: none;
+        
     }
 }
 
