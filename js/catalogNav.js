@@ -1,61 +1,45 @@
 const catalogNav = document.querySelector('.catalog-button__nav');
 
-const desktopSite = () => {
+const Productos =  ["Elastico","Hilo","Cierres","Friselina","Máquinas","Ojalillos","Botones","Punteras"];
 
+const createButtons = () => {
+  const productButtonContainer = document.createElement("div");
+  productButtonContainer.classList.add("product-button__container");
 
-  catalogNav.innerHTML = `
-<div class="product-button__container desktop-catalog">
-          <div data-pushbar-direction="left"></div>
-          <button class="button__product-catalog"  id="productCierres" autofocus>Producto A</button>
-          <button class="button__product-catalog"  id="productElasticos" id="productB">Producto B</button>
-          <button class="button__product-catalog"  id="productHilos">Producto C</button>
-          <button class="button__product-catalog">Producto D</button>
-          <button class="button__product-catalog">Producto E</button>
-          <button class="button__product-catalog">Producto F</button>
-          <button class="button__product-catalog">Producto G</button>
-          <button class="button__product-catalog">Producto H</button>
-          <button class="button__product-catalog">Producto I</button>
-          <button class="button__product-catalog">Producto J</button>
-          <button class="button__product-catalog">Producto K</button>
-          <button class="button__product-catalog">Producto L</button>
-          <button class="button__product-catalog">Producto M</button>
-          <button class="button__product-catalog">Producto N</button>
-          <button class="button__product-catalog">Producto Ñ</button>
-          <button class="button__product-catalog">Producto O</button>
-        </div>
-`
+  Productos.forEach(Producto => {
+    const productButtonNav = document.createElement("button");
+    productButtonNav.classList.add("button__product-catalog");
+    productButtonNav.setAttribute("id", `button${Producto}`);
+    productButtonNav.setAttribute("value", `${Producto}`);
+    productButtonNav.textContent = `${Producto}`;
+
+    productButtonContainer.appendChild(productButtonNav);
+  })
+
+  if(screen.width > 800) {
+    catalogNav.appendChild(productButtonContainer);
+  } else {
+  
+    const productNavPushbar = document.createElement("div");
+    productNavPushbar.setAttribute("data-pushbar-id", "mypushbar1");
+    productNavPushbar.setAttribute("data-pushbar-direction", "left");
+    productNavPushbar.appendChild(productButtonContainer);
+
+    const closePushbarButton = document.createElement("button");
+    closePushbarButton.setAttribute("data-pushbar-close", "");
+    closePushbarButton.classList.add("close-button__pushbar");
+    closePushbarButton.textContent = "cerrar";
+    productNavPushbar.appendChild(closePushbarButton);
+
+    const verProductosButton = document.createElement("button");
+    verProductosButton.setAttribute("data-pushbar-target", "mypushbar1");
+    verProductosButton.classList.add("button__product-catalog", "mobile-catalog__button");
+    verProductosButton.textContent = "Ver productos";
+
+    catalogNav.appendChild(productNavPushbar);
+    catalogNav.appendChild(verProductosButton);
+  
+  }
 }
 
-const mobileSite = () => {
-  catalogNav.innerHTML = `
-    <div data-pushbar-id="mypushbar1" data-pushbar-direction="left">
-  <div class="product-button__container">
-    <div data-pushbar-direction="left"></div>
-    <button class="button__product-catalog"  id="productCierres" autofocus>Producto A</button>
-    <button class="button__product-catalog"  id="productElasticos" id="productB">Producto B</button>
-    <button class="button__product-catalog"  id="productHilos">Producto C</button>
-    <button class="button__product-catalog">Producto D</button>
-    <button class="button__product-catalog">Producto E</button>
-    <button class="button__product-catalog">Producto F</button>
-    <button class="button__product-catalog">Producto G</button>
-    <button class="button__product-catalog">Producto H</button>
-    <button class="button__product-catalog">Producto I</button>
-    <button class="button__product-catalog">Producto J</button>
-    <button class="button__product-catalog">Producto K</button>
-    <button class="button__product-catalog">Producto L</button>
-    <button class="button__product-catalog">Producto M</button>
-    <button class="button__product-catalog">Producto N</button>
-    <button class="button__product-catalog">Producto Ñ</button>
-    <button class="button__product-catalog">Producto O</button>
-  </div>
-      <button data-pushbar-close class="close-button__pushbar">Close</button>
-</div>
- <button data-pushbar-target="mypushbar1" class="button__product-catalog mobile-catalog__button">
-       Ver productos
-      </button>
-    `
-}
-
-
-
-screen.width > 800 ? desktopSite() : mobileSite();
+createButtons();
