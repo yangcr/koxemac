@@ -9,7 +9,7 @@ function initCarousel() {$('.owl-carousel').owlCarousel({
     autoplayHoverPause: true,
     loop: true,
     margin: 25,
-    nav: true,
+    nav: false,
     dots: true,
     responsive: {
         300: {
@@ -87,7 +87,7 @@ const writeDom = (product) => {
         dynamicContent.appendChild(productItem);
       });
 
-    initCarousel();
+    initCarouselNoNav();
 }
 
 

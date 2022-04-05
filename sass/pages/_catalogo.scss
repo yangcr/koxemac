@@ -90,6 +90,58 @@
       color: $clr-white;
     }
    }
+
+
+   .button__product-view {
+    display: inline-block;
+    margin: .4em;
+    padding: 5px 30px;
+    border: .1px solid $clr-lightGrey;
+    border-radius: 15px;
+    color: $clr-black;
+    z-index: 1;
+    position: relative;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 250ms;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      border-radius: 15px;
+      background-color: #212121;
+      z-index: -1;
+      -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+      box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+      transition: all 550ms
+     }
+     &:hover {
+      color: #e8e8e8;
+     }
+  
+     &:hover::before {
+      width: 100%;
+     }
+  
+     &:focus {
+      background: $clr-black;
+      color: $clr-white;
+    }
+  
+    &:active {
+      background: $clr-black;
+      color: $clr-white;
+    }
+  
+    &:target {
+      background: $clr-black;
+      color: $clr-white;
+    }
+   };
    
   
 

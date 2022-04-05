@@ -887,6 +887,60 @@ footer img.logoFooter {
   color: #fafafa;
 }
 
+.button__product-view {
+  display: inline-block;
+  margin: .4em;
+  padding: 5px 30px;
+  border: 0.1px solid #cacdd1;
+  border-radius: 15px;
+  color: #0f0f0f;
+  z-index: 1;
+  position: relative;
+  font-weight: 600;
+  font-size: 17px;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.button__product-view::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  -webkit-transition: all 550ms;
+  transition: all 550ms;
+}
+
+.button__product-view:hover {
+  color: #e8e8e8;
+}
+
+.button__product-view:hover::before {
+  width: 100%;
+}
+
+.button__product-view:focus {
+  background: #0f0f0f;
+  color: #fafafa;
+}
+
+.button__product-view:active {
+  background: #0f0f0f;
+  color: #fafafa;
+}
+
+.button__product-view:target {
+  background: #0f0f0f;
+  color: #fafafa;
+}
+
 .catalog-button__nav {
   display: -webkit-box;
   display: -ms-flexbox;

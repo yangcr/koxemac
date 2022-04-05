@@ -6,96 +6,96 @@ const arrayProductos = {
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
                 id: 1,
-            imagen: "../images/carousel-cierres/1.jpg"
+            imagen: "https://unsplash.it/700/425?random"
             },
         
             {
                 id: 2,
-            imagen: "../images/carousel-cierres/2.jpg"
+            imagen: "https://unsplash.it/700/425?random"
             },
         
             {
                 id: 3,
-            imagen: "../images/carousel-cierres/3.jpg"
+            imagen: "https://unsplash.it/700/425?random"
             },
         
             {
                 id: 4,
-            imagen: "../images/carousel-cierres/4.jpg"
+            imagen: "https://unsplash.it/700/425?random"
             },
         
             {
                 id: 5,
-            imagen: "../images/carousel-cierres/5.jpg"
+            imagen: "https://unsplash.it/700/425?random"
             },
         
             {
                 id: 6,
-            imagen: "../images/carousel-cierres/6.jpg"
+            imagen: "https://unsplash.it/700/425?random"
             },
         
             {
                 id: 7,
-            imagen: "../images/carousel-cierres/7.jpg"
+            imagen: "https://unsplash.it/700/425?random"
             },
         
             {
                 id: 8,
-            imagen: "../images/carousel-cierres/8.jpg"
+            imagen: "https://unsplash.it/700/425?random"
             },
         
             {
                 id: 9,
-            imagen: "../images/carousel-cierres/9.jpg"
+            imagen: "https://unsplash.it/700/425?random"
             }]},
 
             dienteDePerro: {
-                titulo: "reforzados",
+                titulo: "Diente de Perro",
                 subtituloSubProd: "un subtitulo del producto",
                 detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
                 id: 1,
-            imagen: "../images/carousel-cierres/1.jpg"
+            imagen: "https://unsplash.it/800/425?random"
             },
         
             {
                 id: 2,
-            imagen: "../images/carousel-cierres/2.jpg"
+            imagen: "https://unsplash.it/800/425?random"
             },
         
             {
                 id: 3,
-            imagen: "../images/carousel-cierres/3.jpg"
+            imagen: "https://unsplash.it/800/425?random"
             },
         
             {
                 id: 4,
-            imagen: "../images/carousel-cierres/4.jpg"
+            imagen: "https://unsplash.it/800/425?random"
             },
         
             {
                 id: 5,
-            imagen: "../images/carousel-cierres/5.jpg"
+            imagen: "https://unsplash.it/800/425?random"
             },
         
             {
                 id: 6,
-            imagen: "../images/carousel-cierres/6.jpg"
+            imagen: "https://unsplash.it/800/425?random"
             },
         
             {
                 id: 7,
-            imagen: "../images/carousel-cierres/7.jpg"
+            imagen: "https://unsplash.it/800/425?random"
             },
         
             {
                 id: 8,
-            imagen: "../images/carousel-cierres/8.jpg"
+            imagen: "https://unsplash.it/800/425?random"
             },
         
             {
                 id: 9,
-            imagen: "../images/carousel-cierres/9.jpg"
+            imagen: "https://unsplash.it/800/425?random"
             }]},
 
             plastilCero: {
@@ -106,47 +106,47 @@ const arrayProductos = {
                 detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
                 id: 1,
-            imagen: "../images/carousel-cierres/1.jpg"
+            imagen: "https://unsplash.it/640/?random"
             },
         
             {
                 id: 2,
-            imagen: "../images/carousel-cierres/2.jpg"
+            imagen: "https://unsplash.it/640/?random"
             },
         
             {
                 id: 3,
-            imagen: "../images/carousel-cierres/3.jpg"
+            imagen: "https://unsplash.it/640/?random"
             },
         
             {
                 id: 4,
-            imagen: "../images/carousel-cierres/4.jpg"
+            imagen: "https://unsplash.it/640/?random"
             },
         
             {
                 id: 5,
-            imagen: "../images/carousel-cierres/5.jpg"
+            imagen: "https://unsplash.it/640/?random"
             },
         
             {
                 id: 6,
-            imagen: "../images/carousel-cierres/6.jpg"
+            imagen:"https://unsplash.it/640/?random"
             },
         
             {
                 id: 7,
-            imagen: "../images/carousel-cierres/7.jpg"
+            imagen: "https://unsplash.it/640/?random"
             },
         
             {
                 id: 8,
-            imagen: "../images/carousel-cierres/8.jpg"
+            imagen: "https://unsplash.it/640/?random"
             },
         
             {
                 id: 9,
-            imagen: "../images/carousel-cierres/9.jpg"
+            imagen: "https://unsplash.it/640/?random"
             }]}
     },
 
@@ -157,47 +157,47 @@ const arrayProductos = {
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
                 id: 1,
-            imagen: "../images/carousel-cierres/1.jpg"
+            imagen: "http://placekitten.com/700/700"
             },
         
             {
                 id: 2,
-            imagen: "../images/carousel-cierres/2.jpg"
+            imagen: "http://placekitten.com/700/700"
             },
         
             {
                 id: 3,
-            imagen: "../images/carousel-cierres/3.jpg"
+            imagen: "http://placekitten.com/700/700"
             },
         
             {
                 id: 4,
-            imagen: "../images/carousel-cierres/4.jpg"
+            imagen: "http://placekitten.com/700/700"
             },
         
             {
                 id: 5,
-            imagen: "../images/carousel-cierres/5.jpg"
+            imagen: "http://placekitten.com/700/700"
             },
         
             {
                 id: 6,
-            imagen: "../images/carousel-cierres/6.jpg"
+            imagen: "http://placekitten.com/700/700"
             },
         
             {
                 id: 7,
-            imagen: "../images/carousel-cierres/7.jpg"
+            imagen: "http://placekitten.com/700/700"
             },
         
             {
                 id: 8,
-            imagen: "../images/carousel-cierres/8.jpg"
+            imagen: "http://placekitten.com/700/700"
             },
         
             {
                 id: 9,
-            imagen: "../images/carousel-cierres/9.jpg"
+            imagen: "http://placekitten.com/700/700"
             }]},
 
         conCordon: {
@@ -206,47 +206,47 @@ const arrayProductos = {
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
         galeria: [{
             id: 1,
-        imagen: "../images/carousel-cierres/1.jpg"
+        imagen: "https://placekitten.com/700/400"
         },
     
         {
             id: 2,
-        imagen: "../images/carousel-cierres/2.jpg"
+        imagen: "https://placekitten.com/700/400"
         },
     
         {
             id: 3,
-        imagen: "../images/carousel-cierres/3.jpg"
+        imagen: "https://placekitten.com/700/400"
         },
     
         {
             id: 4,
-        imagen: "../images/carousel-cierres/4.jpg"
+        imagen: "https://placekitten.com/700/400"
         },
     
         {
             id: 5,
-        imagen: "../images/carousel-cierres/5.jpg"
+        imagen: "https://placekitten.com/700/400"
         },
     
         {
             id: 6,
-        imagen: "../images/carousel-cierres/6.jpg"
+        imagen: "https://placekitten.com/700/400"
         },
     
         {
             id: 7,
-        imagen: "../images/carousel-cierres/7.jpg"
+        imagen: "https://placekitten.com/700/400"
         },
     
         {
             id: 8,
-        imagen: "../images/carousel-cierres/8.jpg"
+        imagen: "https://placekitten.com/700/400"
         },
     
         {
             id: 9,
-        imagen: "../images/carousel-cierres/9.jpg"
+        imagen: "https://placekitten.com/700/400"
         }]},
 
         enFlor: {
@@ -255,252 +255,252 @@ const arrayProductos = {
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
         galeria: [{
             id: 1,
-        imagen: "../images/carousel-cierres/1.jpg"
+        imagen: "https://placekitten.com/550/400"
         },
     
         {
             id: 2,
-        imagen: "../images/carousel-cierres/2.jpg"
+        imagen: "https://placekitten.com/550/400"
         },
     
         {
             id: 3,
-        imagen: "../images/carousel-cierres/3.jpg"
+        imagen: "https://placekitten.com/550/400"
         },
     
         {
             id: 4,
-        imagen: "../images/carousel-cierres/4.jpg"
+        imagen: "https://placekitten.com/550/400"
         },
     
         {
             id: 5,
-        imagen: "../images/carousel-cierres/5.jpg"
+        imagen: "https://placekitten.com/550/400"
         },
     
         {
             id: 6,
-        imagen: "../images/carousel-cierres/6.jpg"
+        imagen: "https://placekitten.com/550/400"
         },
     
         {
             id: 7,
-        imagen: "../images/carousel-cierres/7.jpg"
+        imagen: "https://placekitten.com/550/400"
         },
     
         {
             id: 8,
-        imagen: "../images/carousel-cierres/8.jpg"
+        imagen: "https://placekitten.com/550/400"
         },
     
         {
             id: 9,
-        imagen: "../images/carousel-cierres/9.jpg"
+        imagen: "https://placekitten.com/550/400"
         }]}
 
 },
 
     hilos: {
-        poliesterLiso: {
-            titulo: "Poliester liso",
+        hiloRecta: {
+            titulo: "Recta 120",
             subtituloSubProd: "un subtitulo del producto",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
                 id: 1,
-            imagen: "../images/carousel-cierres/1.jpg"
+            imagen: "http://placekitten.com/g/200/300"
             },
         
             {
                 id: 2,
-            imagen: "../images/carousel-cierres/2.jpg"
+            imagen: "http://placekitten.com/g/200/300"
             },
         
             {
                 id: 3,
-            imagen: "../images/carousel-cierres/3.jpg"
+            imagen: "http://placekitten.com/g/200/300"
             },
         
             {
                 id: 4,
-            imagen: "../images/carousel-cierres/4.jpg"
+            imagen: "http://placekitten.com/g/200/300"
             },
         
             {
                 id: 5,
-            imagen: "../images/carousel-cierres/5.jpg"
+            imagen: "http://placekitten.com/g/200/300"
             },
         
             {
                 id: 6,
-            imagen: "../images/carousel-cierres/6.jpg"
+            imagen: "http://placekitten.com/g/200/300"
             },
         
             {
                 id: 7,
-            imagen: "../images/carousel-cierres/7.jpg"
+            imagen: "http://placekitten.com/g/200/300"
             },
         
             {
                 id: 8,
-            imagen: "../images/carousel-cierres/8.jpg"
+            imagen: "http://placekitten.com/g/200/300"
             },
         
             {
                 id: 9,
-            imagen: "../images/carousel-cierres/9.jpg"
+            imagen: "http://placekitten.com/g/200/300"
             }]},
 
-        conCordon: {
+        hiloPoliester: {
             titulo: "Elastico con cordón",
             subtituloSubProd: "un subtitulo del producto",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
         galeria: [{
             id: 1,
-        imagen: "../images/carousel-cierres/1.jpg"
+        imagen: "http://placekitten.com/g/400/275"
         },
 
         {
             id: 2,
-        imagen: "../images/carousel-cierres/2.jpg"
+        imagen: "http://placekitten.com/g/400/275"
         },
 
         {
             id: 3,
-        imagen: "../images/carousel-cierres/3.jpg"
+        imagen: "http://placekitten.com/g/400/275"
         },
 
         {
             id: 4,
-        imagen: "../images/carousel-cierres/4.jpg"
+        imagen: "http://placekitten.com/g/400/275"
         },
 
         {
             id: 5,
-        imagen: "../images/carousel-cierres/5.jpg"
+        imagen: "http://placekitten.com/g/400/275"
         },
 
         {
             id: 6,
-        imagen: "../images/carousel-cierres/6.jpg"
+        imagen: "http://placekitten.com/g/400/275"
         },
 
         {
             id: 7,
-        imagen: "../images/carousel-cierres/7.jpg"
+        imagen: "http://placekitten.com/g/400/275"
         },
 
         {
             id: 8,
-        imagen: "../images/carousel-cierres/8.jpg"
+        imagen: "http://placekitten.com/g/400/275"
         },
 
         {
             id: 9,
-        imagen: "../images/carousel-cierres/9.jpg"
+        imagen: "http://placekitten.com/g/400/275"
         }]},
 
-        enFlor: {
-            titulo: "Elastico en flor",
+        hiloBordar: {
+            titulo: "Hilo de bordar",
             subtituloSubProd: "un subtitulo del producto",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
         galeria: [{
             id: 1,
-        imagen: "../images/carousel-cierres/1.jpg"
+        imagen: "http://placekitten.com/200/300"
         },
 
         {
             id: 2,
-        imagen: "../images/carousel-cierres/2.jpg"
+        imagen: "http://placekitten.com/200/300"
         },
 
         {
             id: 3,
-        imagen: "../images/carousel-cierres/3.jpg"
+        imagen: "http://placekitten.com/200/300"
         },
 
         {
             id: 4,
-        imagen: "../images/carousel-cierres/4.jpg"
+        imagen: "http://placekitten.com/200/300"
         },
 
         {
             id: 5,
-        imagen: "../images/carousel-cierres/5.jpg"
+        imagen: "http://placekitten.com/200/300"
         },
 
         {
             id: 6,
-        imagen: "../images/carousel-cierres/6.jpg"
+        imagen: "http://placekitten.com/200/300"
         },
 
         {
             id: 7,
-        imagen: "../images/carousel-cierres/7.jpg"
+        imagen: "http://placekitten.com/200/300"
         },
 
         {
             id: 8,
-        imagen: "../images/carousel-cierres/8.jpg"
+        imagen: "http://placekitten.com/200/300"
         },
 
         {
             id: 9,
-        imagen: "../images/carousel-cierres/9.jpg"
+        imagen: "http://placekitten.com/200/300"
         }]}
 
     },
 
     cordones: {
-        poliesterLiso: {
-            titulo: "Poliester liso",
+        algodonCortado: {
+            titulo: "Algodón cortado",
             subtituloSubProd: "un subtitulo del producto",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
                 id: 1,
-            imagen: "../images/carousel-cierres/1.jpg"
+            imagen: "http://placekitten.com/350/300"
             },
         
             {
                 id: 2,
-            imagen: "../images/carousel-cierres/2.jpg"
+            imagen: "http://placekitten.com/350/300"
             },
         
             {
                 id: 3,
-            imagen: "../images/carousel-cierres/3.jpg"
+            imagen: "http://placekitten.com/350/300"
             },
         
             {
                 id: 4,
-            imagen: "../images/carousel-cierres/4.jpg"
+            imagen: "http://placekitten.com/350/300"
             },
         
             {
                 id: 5,
-            imagen: "../images/carousel-cierres/5.jpg"
+            imagen: "http://placekitten.com/350/300"
             },
         
             {
                 id: 6,
-            imagen: "../images/carousel-cierres/6.jpg"
+            imagen: "http://placekitten.com/350/300"
             },
         
             {
                 id: 7,
-            imagen: "../images/carousel-cierres/7.jpg"
+            imagen: "http://placekitten.com/350/300"
             },
         
             {
                 id: 8,
-            imagen: "../images/carousel-cierres/8.jpg"
+            imagen: "http://placekitten.com/350/300"
             },
         
             {
                 id: 9,
-            imagen: "../images/carousel-cierres/9.jpg"
+            imagen: "http://placekitten.com/350/300"
             }]},
 
-        conCordon: {
+        algodonRollo: {
             titulo: "Elastico con cordón",
             subtituloSubProd: "un subtitulo del producto",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
@@ -549,7 +549,7 @@ const arrayProductos = {
         imagen: "../images/carousel-cierres/9.jpg"
         }]},
 
-        enFlor: {
+        cordonPoliester: {
             titulo: "Elastico en flor",
             subtituloSubProd: "un subtitulo del producto",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",

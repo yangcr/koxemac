@@ -32,12 +32,10 @@ const createButtons = () => {
 
     const verProductosButton = document.createElement("button");
     verProductosButton.setAttribute("data-pushbar-target", "mypushbar1");
-    verProductosButton.classList.add("button__product-catalog", "mobile-catalog__button");
+    verProductosButton.classList.add("button__product-view", "mobile-catalog__button");
     verProductosButton.textContent = "Ver productos";
-
-    catalogNav.appendChild(productNavPushbar);
     catalogNav.appendChild(verProductosButton);
-  
+    catalogNav.appendChild(productNavPushbar);
   }
 }
 
