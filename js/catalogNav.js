@@ -1,12 +1,11 @@
 const catalogNav = document.querySelector('.catalog-button__nav');
 
-const Productos =  ["Elastico","Hilo","Cierres","Friselina","Máquinas","Ojalillos","Botones","Punteras"];
 
 const createButtons = () => {
   const productButtonContainer = document.createElement("div");
   productButtonContainer.classList.add("product-button__container");
 
-  Productos.forEach(Producto => {
+  Object.keys(arrayProductos).forEach(Producto => {
     const productButtonNav = document.createElement("button");
     productButtonNav.classList.add("button__product-catalog");
     productButtonNav.setAttribute("id", `button${Producto}`);
