@@ -11,7 +11,7 @@
     padding: 3em;
     align-items: center;
     justify-content: center;
-    gap: 1.2em;
+    gap: 2em;
     margin-bottom: 1.3em;
 
     .product__text-container {
@@ -32,6 +32,7 @@
 
         .item {
             object-fit: cover;
+            height: 250px;
 
             img {
                 object-fit: cover;
@@ -185,3 +186,6 @@
     z-index: 5;
 }
 
+.dynamic-content__container {
+  padding: 2em;
+}
