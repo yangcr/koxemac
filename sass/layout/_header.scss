@@ -82,20 +82,8 @@ header {
               text-underline-offset: 7px;
           }
           }
-          .submenu {
-            position: absolute;
-            display: none;
-            background: $clr-white;
-            padding: 1em;
-            color: $clr-black;
-            text-align: left;
-            border-radius: 5px;
-            a {
-              margin: 0;
-            }
-
-          }
         }
+        
         li:hover .submenu {
             display: flex;
             flex-direction: column;
