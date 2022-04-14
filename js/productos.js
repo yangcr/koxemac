@@ -1360,25 +1360,668 @@ const arrayProductos = {
                 imagen: "../images/carousel-cierres/9.jpg"
             }]
         },
+
+        cintaVivo: {
+            titulo: "Cinta vivo con vena",
+            subtituloSubProd: "un subtitulo del producto",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        cintaHilera: {
+            titulo: "Cinta hilera",
+            subtituloSubProd: "un subtitulo del producto",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        cintaMochilera: {
+            titulo: "Cinta mochilera",
+            subtituloSubProd: "un subtitulo del producto",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+        
+        cintaGalon: {
+            titulo: "Cinta galón y grifas",
+            subtituloSubProd: "un subtitulo del producto",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
     },
 
+    botones: {
+        botonVaquero: {
+            titulo: "Botón vaquero",
+            subtituloSubProd: "N° 14, N° 17 y N° 20, en hierro, aluminio o bronce. Consultar matriz",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "http://placekitten.com/350/300"
+            },
 
+            {
+                id: 2,
+                imagen: "http://placekitten.com/350/300"
+            },
 
+            {
+                id: 3,
+                imagen: "http://placekitten.com/350/300"
+            },
 
+            {
+                id: 4,
+                imagen: "http://placekitten.com/350/300"
+            },
 
+            {
+                id: 5,
+                imagen: "http://placekitten.com/350/300"
+            },
 
+            {
+                id: 6,
+                imagen: "http://placekitten.com/350/300"
+            },
 
+            {
+                id: 7,
+                imagen: "http://placekitten.com/350/300"
+            },
 
+            {
+                id: 8,
+                imagen: "http://placekitten.com/350/300"
+            },
 
+            {
+                id: 9,
+                imagen: "http://placekitten.com/350/300"
+            }]
+        },
 
+        
+        atraquesJeans: {
+            titulo: "Atraques para jeans",
+            subtituloSubProd: "atraques tipo Levi's y encapsulados. Consultar matriz",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
 
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
 
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
 
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
 
-    
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        botonCamisa: {
+            titulo: "Boton de camisa y saco",
+            subtituloSubProd: "botones de pasta (N°18, consultar colores) y de coco",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+    },
+
+    broches: {
+        
+        brocheResorte: {
+            titulo: "broche resorte",
+            subtituloSubProd: "de hierro (Taiwan o china) y bronce. Consultar matriz",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        dobleAro: {
+            titulo: "broche doble aro",
+            subtituloSubProd: "bronce N° 9 y N° 11. Consultar matriz",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        brochePerla: {
+            titulo: "broche perla",
+            subtituloSubProd: "un subtitulo del producto. Consultar matriz",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        brocheCondal: {
+            titulo: "broche condal",
+            subtituloSubProd: "medidas 10/10 y 13/15, en plástico y hierro. Consultar matriz",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        punteraCordon: {
+            titulo: "Punteras metalicas para cordón",
+            subtituloSubProd: "de hierro o bronce, varios colores. Consultar matriz",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        cocodriloJeans: {
+            titulo: "cocodrilo para jeans",
+            subtituloSubProd: "un subtitulo del producto. Consultar matriz",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+    },
+
     hilos: {
         hiloRecta: {
-            titulo: "Recta 120",
+            titulo: "Hilo de recta (120)",
             subtituloSubProd: "un subtitulo del producto",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
@@ -1427,8 +2070,8 @@ const arrayProductos = {
             }]
         },
 
-        hiloPoliester: {
-            titulo: "Elastico con cordón",
+        hiloOverlock: {
+            titulo: "Hilo Overlock (150)",
             subtituloSubProd: "un subtitulo del producto",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
@@ -1474,12 +2117,112 @@ const arrayProductos = {
             {
                 id: 9,
                 imagen: "http://placekitten.com/g/400/275"
+            }]
+        },
+
+        hiloVaquero: {
+            titulo: "Hilo para vaquero",
+            subtituloSubProd: "Hilo para vaquero, 20/3 y 75",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 2,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 3,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 4,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 5,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 6,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 7,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 8,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 9,
+                imagen: "http://placekitten.com/200/300"
+            }]
+        },
+
+        hiloLurex: {
+            titulo: "Hilo lurex",
+            subtituloSubProd: "Hilo lurex 100/1",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 2,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 3,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 4,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 5,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 6,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 7,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 8,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 9,
+                imagen: "http://placekitten.com/200/300"
             }]
         },
 
         hiloBordar: {
-            titulo: "Hilo de bordar",
-            subtituloSubProd: "un subtitulo del producto",
+            titulo: "Hilo para bordar y base",
+            subtituloSubProd: "Hilo lurex 100/1",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
                 id: 1,
@@ -1525,14 +2268,317 @@ const arrayProductos = {
                 id: 9,
                 imagen: "http://placekitten.com/200/300"
             }]
-        }
+        },
+
+        hiloApto: {
+            titulo: "Hilo apto para teñir",
+            subtituloSubProd: "recta 50, over 24/2 y 30/2, vaquero 40 y 24/3",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 2,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 3,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 4,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 5,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 6,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 7,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 8,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 9,
+                imagen: "http://placekitten.com/200/300"
+            }]
+        },
+
+    },
+
+    avios: {
+        tiracierre: {
+            titulo: "Tiracierres",
+            subtituloSubProd: "para diente de perro, nylon 5 y valijero",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "http://placekitten.com/g/200/300"
+            },
+
+            {
+                id: 2,
+                imagen: "http://placekitten.com/g/200/300"
+            },
+
+            {
+                id: 3,
+                imagen: "http://placekitten.com/g/200/300"
+            },
+
+            {
+                id: 4,
+                imagen: "http://placekitten.com/g/200/300"
+            },
+
+            {
+                id: 5,
+                imagen: "http://placekitten.com/g/200/300"
+            },
+
+            {
+                id: 6,
+                imagen: "http://placekitten.com/g/200/300"
+            },
+
+            {
+                id: 7,
+                imagen: "http://placekitten.com/g/200/300"
+            },
+
+            {
+                id: 8,
+                imagen: "http://placekitten.com/g/200/300"
+            },
+
+            {
+                id: 9,
+                imagen: "http://placekitten.com/g/200/300"
+            }]
+        },
+
+        terminales: {
+            titulo: "Tancas y terminales",
+            subtituloSubProd: "tancas plasticas (dos agujeros) y terminales cocodrilo de plastico, varios colores.",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "http://placekitten.com/g/400/275"
+            },
+
+            {
+                id: 2,
+                imagen: "http://placekitten.com/g/400/275"
+            },
+
+            {
+                id: 3,
+                imagen: "http://placekitten.com/g/400/275"
+            },
+
+            {
+                id: 4,
+                imagen: "http://placekitten.com/g/400/275"
+            },
+
+            {
+                id: 5,
+                imagen: "http://placekitten.com/g/400/275"
+            },
+
+            {
+                id: 6,
+                imagen: "http://placekitten.com/g/400/275"
+            },
+
+            {
+                id: 7,
+                imagen: "http://placekitten.com/g/400/275"
+            },
+
+            {
+                id: 8,
+                imagen: "http://placekitten.com/g/400/275"
+            },
+
+            {
+                id: 9,
+                imagen: "http://placekitten.com/g/400/275"
+            }]
+        },
+
+        velcro: {
+            titulo: "velcro / abrojo",
+            subtituloSubProd: "en 20mm, 25mm, 30mm, 38mm, 50mm y 100mm, varios colores",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 2,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 3,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 4,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 5,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 6,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 7,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 8,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 9,
+                imagen: "http://placekitten.com/200/300"
+            }]
+        },
+
+        cueritoStandard: {
+            titulo: "Cueritos standard",
+            subtituloSubProd: "consultar modelos y colores",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 2,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 3,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 4,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 5,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 6,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 7,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 8,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 9,
+                imagen: "http://placekitten.com/200/300"
+            }]
+        },
+
+        talleStandard: {
+            titulo: "Talles standard",
+            subtituloSubProd: "talle standard bordado o estampado en friselina, con composición o solo numero",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 2,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 3,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 4,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 5,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 6,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 7,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 8,
+                imagen: "http://placekitten.com/200/300"
+            },
+
+            {
+                id: 9,
+                imagen: "http://placekitten.com/200/300"
+            }]
+        },
 
     },
 
     maquinas: {
-        poliesterLiso: {
-            titulo: "Poliester liso",
-            subtituloSubProd: "un subtitulo del producto",
+        maquinaManual: {
+            titulo: "máquina manual",
+            subtituloSubProd: "común o reforzada",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
                 id: 1,
@@ -1580,9 +2626,9 @@ const arrayProductos = {
             }]
         },
 
-        conCordon: {
-            titulo: "Elastico con cordón",
-            subtituloSubProd: "un subtitulo del producto",
+        maquinaPie: {
+            titulo: "Máquina de pie",
+            subtituloSubProd: "común o reforzada",
             detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
             galeria: [{
                 id: 1,
@@ -1629,56 +2675,6 @@ const arrayProductos = {
                 imagen: "../images/carousel-cierres/9.jpg"
             }]
         },
-
-        enFlor: {
-            titulo: "Elastico en flor",
-            subtituloSubProd: "un subtitulo del producto",
-            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
-            galeria: [{
-                id: 1,
-                imagen: "../images/carousel-cierres/1.jpg"
-            },
-
-            {
-                id: 2,
-                imagen: "../images/carousel-cierres/2.jpg"
-            },
-
-            {
-                id: 3,
-                imagen: "../images/carousel-cierres/3.jpg"
-            },
-
-            {
-                id: 4,
-                imagen: "../images/carousel-cierres/4.jpg"
-            },
-
-            {
-                id: 5,
-                imagen: "../images/carousel-cierres/5.jpg"
-            },
-
-            {
-                id: 6,
-                imagen: "../images/carousel-cierres/6.jpg"
-            },
-
-            {
-                id: 7,
-                imagen: "../images/carousel-cierres/7.jpg"
-            },
-
-            {
-                id: 8,
-                imagen: "../images/carousel-cierres/8.jpg"
-            },
-
-            {
-                id: 9,
-                imagen: "../images/carousel-cierres/9.jpg"
-            }]
-        }
 
     }
 }
