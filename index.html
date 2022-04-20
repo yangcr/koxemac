@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
   <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
 
   <link rel="stylesheet" href="./css/main.css">
   <title>Koxemac | Mayorista de avíos e insumos</title>
@@ -35,7 +36,7 @@
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./pages/catalogue.html">Catalogo</a></li>
             <li><a href="./pages/personalizados.html">Personalizados</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
           </ul>
         </nav>
 
@@ -45,23 +46,27 @@
 
     <div class="header__mobile shadow-lg">
       <a href="/"><img src="./images/logo.png" alt="logo de Koxemac" class="navLogo"></a>
-      <svg class="nav__btn nav_btn-open" id="navOpen" viewBox="0 0 32 32">
+      <svg class="nav__btn nav_btn-open" id="navOpen" viewBox="0 0 32 32" data-pushbar-target="NavPushbar">
         <path
           d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
       </svg>
-      <nav id="nav">
-        <svg viewBox="0 0 24 24" class="nav__btn nav__btn-close" id="navClose">
+      <div data-pushbar-id="NavPushbar" data-pushbar-direction="right" class="nav__pushbar mypushbarNav">
+        <svg viewBox="0 0 24 24" class="nav__btn-close" id="navClose" data-pushbar-close>
           <path
             d="M14.8,12l3.6-3.6c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L12,9.2L8.4,5.6c-0.8-0.8-2-0.8-2.8,0   c-0.8,0.8-0.8,2,0,2.8L9.2,12l-3.6,3.6c-0.8,0.8-0.8,2,0,2.8C6,18.8,6.5,19,7,19s1-0.2,1.4-0.6l3.6-3.6l3.6,3.6   C16,18.8,16.5,19,17,19s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L14.8,12z" />
         </svg>
-        <ul class="menu">
-          <li><a href="./index.html" class="active">Inicio</a></li>
-          <li><a href="./pages/catalogue.html">Catálogo</a></li>
-          <li><a href="./pages/desarrollos.html">Personalizados</a></li>
-          <li><a href="./pages/finalizados.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="pushbarNav">
+          <ul class="menu">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./pages/catalogue.html" class="active">Catálogo</a></li>
+            <li><a href="./pages/personalizados.html">Personalizados</a>
+            </li>
+            <li><a href="#">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+         
+      </div>
     </div>
 
   </header>
@@ -98,99 +103,91 @@
     <section class="highlightProducts w-100">
       <h2 class="py-4">PRODUCTOS DESTACADOS</h2>
 
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <div class="card shadow-card">
-            <img src="./images/cierre.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CIERRES</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body cardButton">
-              <a href="#" class="card-link">Ver cierres</a>
-            </div>
+
+      <div class="card-gallery">
+        <div class="card shadow-card">
+          <img src="./images/cierre.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CIERRES</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body cardButton">
+            <a href="#" class="card-link">Ver cierres</a>
           </div>
         </div>
-        <div class="item">
-          <div class="card shadow-card">
-            <img src="./images/cordones.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CORDONES</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body cardButton">
-              <a href="#" class="card-link">Ver cordones</a>
-            </div>
+        <div class="card shadow-card">
+          <img src="./images/cordones.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CORDONES</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body cardButton">
+            <a href="#" class="card-link">Ver cordones</a>
           </div>
         </div>
-        <div class="item">
-          <div class="card shadow-card">
-            <img src="./images/hilo.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">HILOS</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body cardButton">
-              <a href="#" class="card-link">Ver hilos</a>
-            </div>
+        <div class="card shadow-card">
+          <img src="./images/hilo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HILOS</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body cardButton">
+            <a href="#" class="card-link">Ver hilos</a>
           </div>
         </div>
-        <div class="item">
-          <div class="card shadow-card">
-            <img src="./images/varios.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">VARIOS</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body cardButton">
-              <a href="#" class="card-link">ver varios</a>
-            </div>
+        <div class="card shadow-card">
+          <img src="./images/varios.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">VARIOS</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body cardButton">
+            <a href="#" class="card-link">ver varios</a>
           </div>
         </div>
-        <div class="item">
-          <div class="card shadow-card">
-            <img src="./images/botones.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">BOTONES</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body cardButton">
-              <a href="#" class="card-link">Ver botones</a>
-            </div>
+        <div class="card shadow-card">
+          <img src="./images/botones.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BOTONES</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body cardButton">
+            <a href="#" class="card-link">Ver botones</a>
           </div>
         </div>
-    </div>
+      </div>
     
+
 
     </section>
 
@@ -252,7 +249,7 @@
       </div>
     </section>
 
-    <section class="dondeEstamos" class="mb-5">
+    <section class="dondeEstamos mb-5">
       <h2 class="py-4">DONDE ESTAMOS</h2>
       <div class="directionContainer">
         <iframe
@@ -291,19 +288,18 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="../js/navOpen.js"></script>
-    <script src="./js/initCarouselFunctions.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="../owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
 
 
-    <script src="./js/scriptsIndex.js"></script>
+  <script src="./js/scriptsIndex.js"></script>
 
 
 

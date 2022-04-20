@@ -101,6 +101,15 @@ header {
   align-items: center;
   padding: .9em 2.3em;
 
+  @media (min-width: 651px) {
+    display: none;
+  }
+
+  .navLogo {
+      width: 70px;
+  }
+
+
 
   .nav__btn {
       width: 40px;
@@ -113,60 +122,49 @@ header {
       }
   }
 
-  .navLogo {
-      width: 70px;
   }
 
-  nav {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 65vw;
-      background: $clr-lightGrey;
-      z-index: 1000;
-      
-      display: none;
-
-      &.nav-open {
-          display: block;
-      }
-
-      .menu {
-          display: flex;
-          flex-direction: column;
-          gap: 2em;
-          margin-top: 20vh;
-          margin-left: 1.2em;
-
-          & .sub-menu {
-              display: none;
-          }
-
-          li a {
-              color: $clr-black;
-              letter-spacing: .15em;
-              opacity: 0.6;
-
-              &.active {
-                  font-weight: 800;
-                  opacity: 1;
-              }
-
-              &:hover {
-                  text-decoration: 2px underline;
-                  text-underline-offset: 7px;
-              }
-
-          }
-      }
-  }
-  
-
-  @media (min-width: 651px) {
-    display: none;
-  }
-
+  .nav__btn-close {
+    width: 40px;
+    display: block;
+    fill: $clr-black;
+    float: right;
+    margin: 1.5em 2.3em;
 }
 
+.mypushbarNav {
+  display: flex;
+  background: $clr-lightGrey;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: $clr-lightGrey;
+  z-index: 1000;
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 20vh;
+    margin-left: 1.2em;
+
+    li a {
+        color: $clr-black;
+        letter-spacing: .15em;
+        opacity: 0.6;
+
+        &.active {
+            font-weight: 800;
+            opacity: 1;
+        }
+
+        &:hover {
+            text-decoration: 2px underline;
+            text-underline-offset: 7px;
+        }
+
+    }
+}
+}
 }

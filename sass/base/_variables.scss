@@ -155,10 +155,11 @@ $clr-darkGrey: #404040;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  padding: .3em;
 }
 
 .card {
-    width: 350px;
+    width: 450px;
     margin: .8em;
     align-items: center;
   img {
