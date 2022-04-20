@@ -2676,5 +2676,608 @@ const arrayProductos = {
             }]
         },
 
+    },
+
+    varios: {
+        agujas: {
+            titulo: "Agujas para máquina de coser",
+            subtituloSubProd: "consultar medidas y tipo de aguja",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        pistolaEtiquetadora: {
+            titulo: "Pistola etiquetadora",
+            subtituloSubProd: "Pistola etiquetadora, agujas y pines",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        alfileres: {
+            titulo: "alfileres",
+            subtituloSubProd: "Alfileres cabeza y de gancho",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        cintaMetrica: {
+            titulo: "Cinta métrica",
+            subtituloSubProd: "Cinta métrica de 1,50m",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        cuchillaAfiladores: {
+            titulo: "Cuchillas y afiladores",
+            subtituloSubProd: "Importado americano y chino",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        aceiteMaquina: {
+            titulo: "Aceite para máquinas",
+            subtituloSubProd: "varios, de 1L y 5L",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        aerosolesPegamento: {
+            titulo: "Aerosoles",
+            subtituloSubProd: "pegamento, quitamancha, lubricante y silicona",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        piquetes: {
+            titulo: "Piquetes",
+            subtituloSubProd: "origen: Taiwán",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        tijeras: {
+            titulo: "Tijeras",
+            subtituloSubProd: "Mundial y genéricas. Varios tamaños",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        pinzaTela: {
+            titulo: "Pinza para telas y agujas",
+            subtituloSubProd: "algun subtitulo",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        tizas: {
+            titulo: "Tizas",
+            subtituloSubProd: "para sastre, plásticas y de cera. Color blanco o surtido",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
+        imanes: {
+            titulo: "Imanes",
+            subtituloSubProd: "para sastre, plásticas y de cera. Color blanco o surtido",
+            detallesSubProducto: "Lorem ipsum ipsam quos, enim nostrum debitis obcaecaiti porro quam officiis laborum inventore aspernatur cupiditate omnis corrupti, culpa maiores velit tempora dignissimos.",
+            galeria: [{
+                id: 1,
+                imagen: "../images/carousel-cierres/1.jpg"
+            },
+
+            {
+                id: 2,
+                imagen: "../images/carousel-cierres/2.jpg"
+            },
+
+            {
+                id: 3,
+                imagen: "../images/carousel-cierres/3.jpg"
+            },
+
+            {
+                id: 4,
+                imagen: "../images/carousel-cierres/4.jpg"
+            },
+
+            {
+                id: 5,
+                imagen: "../images/carousel-cierres/5.jpg"
+            },
+
+            {
+                id: 6,
+                imagen: "../images/carousel-cierres/6.jpg"
+            },
+
+            {
+                id: 7,
+                imagen: "../images/carousel-cierres/7.jpg"
+            },
+
+            {
+                id: 8,
+                imagen: "../images/carousel-cierres/8.jpg"
+            },
+
+            {
+                id: 9,
+                imagen: "../images/carousel-cierres/9.jpg"
+            }]
+        },
+
     }
 }
