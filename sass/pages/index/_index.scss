@@ -8,14 +8,8 @@
 }
 
 .highlightProducts {
-  background-image: url(../images/carousel-bg.jpg);
+  background-image: url("../images/highlight-products.jpg");
   background-attachment: fixed;
-
-
-  .highlights__container {
-
-    padding: 3em 0;
-  }
 
   h2 {
     background-color: $clr-black;
