@@ -10,6 +10,8 @@
 .highlightProducts {
   background-image: url("../images/highlight-products.jpg");
   background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
 
   h2 {
     background-color: $clr-black;
