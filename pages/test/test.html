@@ -8,12 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
 
-    <canvas id="canvas" width=300 height=300></canvas>
+<input type="file" accept="image/jpeg, image/png, image/jpg" onchange="readImage(this)">
+
+<input type="file" accept="image/jpeg, image/png, image/jpg" onchange="readImage(this)">
+<div id="display-image"></div>
+
+
+<div id="container"></div>
 
 
 
+
+
+<canvas id="canvas" width=300 height=300></canvas>
+<div id="preview"></div>
+
+
+<script src="https://unpkg.com/konva@8/konva.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

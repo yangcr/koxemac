@@ -106,3 +106,51 @@ $("#canvas").mouseup(function (e) {
 $("#canvas").mouseout(function (e) {
     handleMouseOut(e);
 });
+
+
+
+
+
+
+
+
+var width = window.innerWidth;
+var height = window.innerHeight;
+
+var stage = new Konva.Stage({
+  container: 'container',
+  width: width,
+  height: height,
+});
+
+var layer = new Konva.Layer();
+stage.add(layer);
+
+// main API:
+var imageObj = new Image();
+imageObj.onload = function () {
+  var yoda = new Konva.Image({
+    x: 50,
+    y: 50,
+    image: imageObj,
+    width: 106,
+    height: 118,
+    draggable: true
+  });
+
+  // add the shape to the layer
+  layer.add(yoda);
+};
+
+
+function readImage(input) {
+    let imgSrc = '';
+    if (input.value !== '') {
+      imgSrc = window.URL.createObjectURL(input.files[0]);
+    }
+    const img = new Image();
+    img.onload = function() {
+      context.drawImage(img, 0, 0);
+    }
+    imageObj.src = imgSrc;
+  }
