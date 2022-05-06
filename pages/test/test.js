@@ -1,4 +1,4 @@
-let canvas = document.getElementById("canvas");
+/* let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
 let $canvas = $("#canvas");
@@ -113,7 +113,7 @@ $("#canvas").mouseout(function (e) {
 
 
 
-
+ 
 var width = window.innerWidth;
 var height = window.innerHeight;
 
@@ -153,4 +153,31 @@ function readImage(input) {
       context.drawImage(img, 0, 0);
     }
     imageObj.src = imgSrc;
-  }
+  }  */
+
+
+  let inputColor = document.querySelector("#inputColor");
+  let generateButton = document.querySelector("#generateButton");
+
+  let anchoEtiqueta = document.querySelector("#anchoEtiqueta");
+  let altoEtiqueta = document.querySelector("#altoEtiqueta");
+
+
+
+  var canvas = document.getElementById("container");
+  var ctx = canvas.getContext("2d");
+
+  anchoEtiqueta.addEventListener("change", () => {
+      canvas.style.width=`${anchoEtiqueta.value}`
+  })
+
+
+
+
+  generateButton.addEventListener("click", () => {
+    canvas.style.height=`${altoEtiqueta.value}mm`
+    console.log(altoEtiqueta.value);
+    ctx.fillStyle = `${inputColor.value}`;
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    console.log(inputColor.value);
+  })

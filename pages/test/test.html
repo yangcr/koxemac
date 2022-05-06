@@ -8,21 +8,23 @@
     <title>Document</title>
 </head>
 <body>
+<select id="anchoEtiqueta">
+    <option  value="">Seleccione el ancho</option>
+    <option value="12mm">12mm</option>
+    <option value="16mm">16mm</option>
+    <option value="37mm">37mm</option>
+    <option value="60mm">60mm</option>
+    <option value="70mm">70mm</option>
+    <option value="150mm">100mm</option>
+</select>
+<label for="altoEtiqueta">Alto de su etiqueta</label>
+<input type="number" name="altoEtiqueta" id="altoEtiqueta">
 
-<input type="file" accept="image/jpeg, image/png, image/jpg" onchange="readImage(this)">
+<label for="altoEtiqueta">Fondo de su etiqueta</label>
+<input type="color" name="letraColor" id="inputColor">
+<button id="generateButton">Generar etiqueta</button>
 
-<input type="file" accept="image/jpeg, image/png, image/jpg" onchange="readImage(this)">
-<div id="display-image"></div>
-
-
-<div id="container"></div>
-
-
-
-
-
-<canvas id="canvas" width=300 height=300></canvas>
-<div id="preview"></div>
+<canvas id="container"></canvas>
 
 
 <script src="https://unpkg.com/konva@8/konva.min.js"></script>
