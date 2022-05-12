@@ -8,23 +8,33 @@
     <title>Document</title>
 </head>
 <body>
-<select id="anchoEtiqueta">
-    <option  value="">Seleccione el ancho</option>
-    <option value="12mm">12mm</option>
-    <option value="16mm">16mm</option>
-    <option value="37mm">37mm</option>
-    <option value="60mm">60mm</option>
-    <option value="70mm">70mm</option>
-    <option value="150mm">100mm</option>
-</select>
-<label for="altoEtiqueta">Alto de su etiqueta</label>
-<input type="number" name="altoEtiqueta" id="altoEtiqueta">
 
-<label for="altoEtiqueta">Fondo de su etiqueta</label>
-<input type="color" name="letraColor" id="inputColor">
-<button id="generateButton">Generar etiqueta</button>
+    <select id="anchoEtiqueta">
+        <option  value="">Seleccione el ancho</option>
+        <option value=12>12mm</option>
+        <option value=16>16mm</option>
+        <option value=36>37mm</option>
+        <option value=60>60mm</option>
+        <option value=70>70mm</option>
+        <option value=100>100mm</option>
+    </select>
+    <label for="altoEtiqueta">Alto de su etiqueta <input type="number" name="altoEtiqueta" id="altoEtiqueta"></label>
+    <label for="fondoEtiqueta">Fondo de su etiqueta <input type="color" name="fondoEtiqueta" id="fondoEtiqueta"></label>
 
-<canvas id="container"></canvas>
+    
+<input type="file" accept="image/jpeg, image/png, image/jpg" id="inputLogo">
+
+    
+    
+    <label for="userBrand">Su marca<input type="text" name="userBrand" id="userBrand"></label>
+    
+    
+    <button id="generateButton">Generar etiqueta</button>
+
+<div id="display-image"></div>
+
+
+<div id="container"></div>
 
 
 <script src="https://unpkg.com/konva@8/konva.min.js"></script>
