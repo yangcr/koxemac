@@ -4,6 +4,10 @@ const inputLogo = document.getElementById('inputLogo');
 
 const fondoEtiqueta = document.querySelector("#fondoEtiqueta");
 
+const colorMarca = document.querySelector("#colorMarca");
+
+const userBrand = document.querySelector("#userBrand");
+
 
 
 
@@ -24,7 +28,7 @@ const fondoEtiqueta = document.querySelector("#fondoEtiqueta");
       height: divContainer.offsetHeight,
     });
     
-    var layerImage = new Konva.Layer();
+    var layer = new Konva.Layer();
 
     
     // main API:
@@ -34,27 +38,26 @@ const fondoEtiqueta = document.querySelector("#fondoEtiqueta");
         x: 50,
         y: 50,
         image: imageObj,
+        draggable: true,
         width: 106,
         height: 118,
-        draggable: true
       });
     
       // add the shape to the layer
-      layerImage.add(brand);
+      layer.add(brand);
     };
 
-    imgSrc = window.URL.createObjectURL(inputLogo.files[0]);
+
+    if (inputLogo.files.length !== 0) {
+      imgSrc = window.URL.createObjectURL(inputLogo.files[0]);
     
-    const img = new Image();
-    img.onload = function() {
-      context.drawImage(img, 0, 0);
+      const img = new Image();
+      img.onload = function() {
+        context.drawImage(img, 0, 0);
+      }
+      imageObj.src = imgSrc;
     }
-    imageObj.src = imgSrc;
 
-
-
-
-    var layerBackground = new Konva.Layer();
 
       var rect1 = new Konva.Rect({
         x: 0,
@@ -64,9 +67,21 @@ const fondoEtiqueta = document.querySelector("#fondoEtiqueta");
         fill: `${fondoEtiqueta.value}`,
       });
 
-      console.log(rect1);
+      var brandName = new Konva.Text({
+        x: stage.width() / 2,
+        y: 15,
+        text: `${userBrand.value}`,
+        fontSize: 30,
+        fontFamily: 'Calibri',
+        fill: `${colorMarca.value}`,
+        draggable: true,
+      });
+
+
+
+
       // add the shape to the layer
-      layerBackground.add(rect1);
-            stage.add(layerBackground);
-            stage.add(layerImage);
+      layer.add(rect1);
+      layer.add(brandName);
+            stage.add(layer);
   })
