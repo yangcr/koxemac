@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./test.css">
+    <link rel="preload" as="style" href="./fonts.css">
     <title>Document</title>
 </head>
 <body>
@@ -27,7 +28,18 @@
     
     
     <label for="userBrand">Su marca<input type="text" name="userBrand" id="userBrand"></label>
-    <label for="colorMarca">Fondo de su etiqueta <input type="color" name="colorMarca" id="colorMarca"></label>
+    <select id="fontEtiqueta">
+        <option  value="">Seleccione una fuente</option>
+        <option value="Adorable">Adorable</option>
+        <option value="Allegro">Allegro</option>
+        <option value="Angelina">Angelina</option>
+        <option value="BrockScript">Brock Script</option>
+        <option value="Brush Script MT">Brush Script</option>
+        <option value="Jewel Hill">Jewel Hill</option>
+        <option value="MA Sexy">MA Sexy</option>
+        <option value="Wild Ride">WildRide</option>
+    </select>
+    <label for="colorMarca">Color de texto <input type="color" name="colorMarca" id="colorMarca"></label>
     
     
     <button id="generateButton">Generar etiqueta</button>

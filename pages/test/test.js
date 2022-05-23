@@ -8,11 +8,7 @@ const colorMarca = document.querySelector("#colorMarca");
 
 const userBrand = document.querySelector("#userBrand");
 
-
-
-
-
-
+const fontEtiqueta = document.querySelector("#fontEtiqueta");
 
 
 
@@ -72,7 +68,7 @@ const userBrand = document.querySelector("#userBrand");
         y: 15,
         text: `${userBrand.value}`,
         fontSize: 30,
-        fontFamily: 'Calibri',
+        fontFamily: `${fontEtiqueta.value}`,
         fill: `${colorMarca.value}`,
         draggable: true,
       });
