@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'allisonregular';
+    src: url('allison-regular-webfont.woff2') format('woff2'),
+         url('allison-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neue_probold';
+    src: url('bebasneuepro-bold-webfont.woff2') format('woff2'),
+         url('bebasneuepro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'brock_scriptregular';
+    src: url('brockscript-webfont.woff2') format('woff2'),
+         url('brockscript-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'jewel_hillregular';
+    src: url('jewelhill-webfont.woff2') format('woff2'),
+         url('jewelhill-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ma_sexyregular';
+    src: url('masexy-webfont.woff2') format('woff2'),
+         url('masexy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'wild_rideregular';
+    src: url('wildride-webfont.woff2') format('woff2'),
+         url('wildride-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
