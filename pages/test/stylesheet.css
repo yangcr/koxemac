@@ -48,8 +48,8 @@
 
 @font-face {
     font-family: 'ma_sexyregular';
-    src: url('masexy-webfont.woff2') format('woff2'),
-         url('masexy-webfont.woff') format('woff');
+    src: url('https://cielciel2x.github.io/koxemac/fonts/masexy-webfont.woff2') format('woff2'),
+         url('https://cielciel2x.github.io/koxemac/fonts/masexy-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -59,9 +59,9 @@
 
 
 @font-face {
-    font-family: 'wild_rideregular';
-    src: url('wildride-webfont.woff2') format('woff2'),
-         url('wildride-webfont.woff') format('woff');
+    font-family: 'wildRide';
+    src: url('https://cielciel2x.github.io/koxemac/fonts/wildride-webfont.woff2') format('woff2'),
+         url('https://cielciel2x.github.io/koxemac/fonts/wildride-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
