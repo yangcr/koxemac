@@ -9,3 +9,7 @@ body {
   border: 1px solid red;
   height: 50vh;
 }
+
+h1 {
+  font-family: "bebas_neue_probold";
+}
