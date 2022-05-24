@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Adorable";
-    src: url("../../fonts/Adorable.ttf.eot");
+    src: url("../../fonts/Adorable.ttf.eot") ;
   }
   
   @font-face {
     font-family: "Allegro";
-    src: url("../../fonts/ALLEGRO.TTF");
+    src: url("../../fonts/ALLEGRO.TTF") format('truetype');
   }
   
   @font-face {
@@ -15,23 +15,23 @@
   
     @font-face {
       font-family: "BrockScript";
-      src: url("../../fonts/BrockScript.ttf");
+      src: url("../../fonts/BrockScript.ttf") format('truetype');
     }
     @font-face {
       font-family: "Brush Script MT";
-      src: url("../../fonts/BRUSHSCI.ttf");
+      src: url("../../fonts/BRUSHSCI.ttf") format('truetype');
     }
     @font-face {
       font-family: "Jewel Hill";
-      src: url("../../fonts/JewelHill.ttf");
+      src: url("../../fonts/JewelHill.ttf") format('truetype');
     }
     @font-face {
       font-family: "MA Sexy";
-      src: url("../../fonts/MASexy.ttf");
+      src: url("../../fonts/MASexy.ttf") format('truetype');
     }
     @font-face {
       font-family: "Wild Ride";
-      src: url("../../fonts/WildRide.ttf");
+      src: url("../../fonts/WildRide.ttf") format('truetype');
     }
   
   /* @font-face {
