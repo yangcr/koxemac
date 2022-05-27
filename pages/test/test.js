@@ -12,9 +12,35 @@ const fontEtiqueta = document.querySelector("#fontEtiqueta");
 
 
 
+const AllisonRegular = new FontFace('allisonregular', 'url(https://cielciel2x.github.io/koxemac/fonts/allison-regular-webfont.woff)');
+AllisonRegular.load().then(function(allisonFile) {
+	document.fonts.add(allisonFile);
+});
 
-  generateButton.addEventListener("click", () => {
-    divContainer.style.width=`${anchoEtiqueta.value}mm`;
+const brockScript = new FontFace('brock_scriptregular', 'url(https://cielciel2x.github.io/koxemac/fonts/brockscript-webfont.woff)');
+brockScript.load().then(function(brockScriptFile) {
+	document.fonts.add(brockScriptFile);
+});
+
+const jewelHillRegular = new FontFace('jewel_hillregular', 'url(https://cielciel2x.github.io/koxemac/fonts/jewelhill-webfont.woff)');
+jewelHillRegular.load().then(function(jewelHillFile) {
+	document.fonts.add(jewelHillFile);
+});
+
+const maSexyRegular = new FontFace('MA Sexy Regular', 'url(https://cielciel2x.github.io/koxemac/fonts/masexy-webfont.woff)');
+maSexyRegular.load().then(function(maSexyRegularFile) {
+	document.fonts.add(maSexyRegularFile);
+});
+
+const wildRide = new FontFace('WildRide', 'url(https://cielciel2x.github.io/koxemac/fonts/wildride-webfont.woff)');
+wildRide.load().then(function(wildRideFile) {
+	document.fonts.add(wildRideFile);
+});
+
+
+
+const createTag = () => {
+  divContainer.style.width=`${anchoEtiqueta.value}mm`;
     divContainer.style.height=`${altoEtiqueta.value}mm`;
 
 
@@ -80,4 +106,11 @@ const fontEtiqueta = document.querySelector("#fontEtiqueta");
       layer.add(rect1);
       layer.add(brandName);
             stage.add(layer);
+}
+
+
+
+
+  generateButton.addEventListener("click", () => {
+    createTag();
   })
