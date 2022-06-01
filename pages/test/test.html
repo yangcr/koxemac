@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="./test.css">
     <title>Document</title>
 </head>
+
 <body>
-<h1>Test Font</h1>
+    <h1>Test Font</h1>
     <select id="anchoEtiqueta">
-        <option  value="">Seleccione el ancho</option>
+        <option value="">Seleccione el ancho</option>
         <option value=12>12mm</option>
         <option value=16>16mm</option>
         <option value=36>37mm</option>
@@ -21,36 +23,40 @@
     <label for="altoEtiqueta">Alto de su etiqueta <input type="number" name="altoEtiqueta" id="altoEtiqueta"></label>
     <label for="fondoEtiqueta">Fondo de su etiqueta <input type="color" name="fondoEtiqueta" id="fondoEtiqueta"></label>
 
-    
-<input type="file" accept="image/jpeg, image/png, image/jpg" id="inputLogo">
 
-    
-    
+    <input type="file" accept="image/jpeg, image/png, image/jpg" id="inputLogo">
+
+
+
     <label for="userBrand">Su marca<input type="text" name="userBrand" id="userBrand"></label>
     <select id="fontEtiqueta">
-        <option  value="">Seleccione una fuente</option>
-        <option value="allisonregular">Allison</option>
-        <option value="brock_scriptregular">Brock Script</option>
-        <option value="jewel_hillregular">Jewel Hill</option>
-        <option value="MA Sexy Regular">MA Sexy</option>
-        <option value="wildRide">WildRide</option>
+        <optgroup label="Cursiva">
+            <option value="">Seleccione una fuente</option>
+            <option value="allisonregular">Allison</option>
+            <option value="brock_scriptregular">Brock Script</option>
+            <option value="jewel_hillregular">Jewel Hill</option>
+            <option value="MA Sexy Regular">MA Sexy</option>
+            <option value="wildRide">WildRide</option>
+        </optgroup>
     </select>
     <label for="colorMarca">Color de texto <input type="color" name="colorMarca" id="colorMarca"></label>
-    
-    
+    <label for="conComposicion">Con composicion</label><input type="checkbox" id="conComposicion">
+
+
     <button id="generateButton">Generar etiqueta</button>
 
-<div id="display-image"></div>
+    <div id="display-image"></div>
 
 
-<div id="container"></div>
+    <div id="container"></div>
 
 
-<script src="https://unpkg.com/konva@8/konva.min.js"></script>
+    <script src="https://unpkg.com/konva@8/konva.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./test.js"></script>
 </body>
+
 </html>
