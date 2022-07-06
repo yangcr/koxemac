@@ -1,5 +1,6 @@
 body {
   background-color: ivory;
+  box-sizing: border-box;
 }
 #canvas {
   border: 1px solid red;
@@ -12,4 +13,33 @@ body {
 
 h1 {
   font-family: "bebas_neue_probold";
+}
+
+
+.tag-creator__container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 3em;
+}
+
+.design-app {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  justify-content: space-around;
+  padding: 0 5em;
+}
+
+.tag-creator__section {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.display-container {
+  min-width: 600px;
+  max-width: 800px;
+  display: flex;
+  flex-grow: 1;
 }

@@ -9,7 +9,18 @@ const colorMarca = document.querySelector("#colorMarca");
 const userBrand = document.querySelector("#userBrand");
 
 const fontEtiqueta = document.querySelector("#fontEtiqueta");
-const conComposicion = document.querySelector("#conComposicion")
+const conComposicion = document.querySelector("#conComposicion");
+
+const orientacionEtiqueta = document.querySelectorAll('input[name="orientacionEtiqueta"]');
+console.log(orientacionEtiqueta);
+let orientacionElegida = "vertical";
+
+orientacionEtiqueta.forEach(orientacion => {
+    orientacion.addEventListener('change', () => {
+        orientacionElegida = orientacion.value;
+        console.log(orientacionElegida);
+    });
+})
 
 
 
@@ -47,8 +58,14 @@ if ("fonts" in document) {
 
 
 const createTag = () => {
+
+  if (orientacionElegida == "vertical") {
   divContainer.style.width = `${anchoEtiqueta.value}mm`;
   divContainer.style.height = `${altoEtiqueta.value}mm`;
+  } else if (orientacionElegida == "horizontal") {
+  divContainer.style.width = `${altoEtiqueta.value}mm`;
+  divContainer.style.height = `${anchoEtiqueta.value}mm`;
+  }
 
 
   var stage = new Konva.Stage({
@@ -64,12 +81,15 @@ const createTag = () => {
   var imageObj = new Image();
   imageObj.onload = function () {
     var brand = new Konva.Image({
-      x: 50,
-      y: 50,
+      x: divContainer.width/2,
+      y: divContainer.height/2,
       image: imageObj,
       draggable: true,
-      width: 106,
-      height: 118,
+      width: divContainer.width,
+      height: divContainer.height,
+      scaleX: .5,
+      scaleY: .5,
+      name: 'rect',
     });
 
     // add the shape to the layer
@@ -85,6 +105,7 @@ const createTag = () => {
       context.drawImage(img, 0, 0);
     }
     imageObj.src = imgSrc;
+    
   }
 
 
@@ -101,7 +122,7 @@ const createTag = () => {
 
   var brandName = new Konva.Text({
     x: stage.width() / 2,
-    y: 15,
+    y: 25,
     text: `${userBrand.value}`,
     fontSize: 30,
     fontFamily: `${fontEtiqueta.value}`,
@@ -114,9 +135,9 @@ const createTag = () => {
 
   var composicionTexto = new Konva.Text({
     x: stage.width() / 2,
-    y: 15,
-    text: `CUIT:\n00-00000000-0\nINDUSTRIA\nARGENTINA\nLAVAR CON AGUA FRIA\nNO USAR COLOR\nPLANCHA TIBIA\nNO RETORCER`,
-    fontSize: 12,
+    y: stage.height() - 75,
+    text: `CUIT:\n00-00000000-0\nINDUSTRIA\nARGENTINA\nUSAR AGUA FRIA\nNO USAR CLORO\nPLANCHA TIBIA\nNO RETORCER`,
+    fontSize: 7.5,
     fontFamily: `Arial`,
     fill: `${colorMarca.value}`,
     align: 'center',
@@ -131,15 +152,32 @@ const createTag = () => {
 
 
 
+  var MAX_WIDTH = 100;
 
 
+      var tr = new Konva.Transformer({
+        enabledAnchors: [
+          'top-left',
+          'top-right',
+          'bottom-left',
+          'bottom-right',
+        ],
+        boundBoxFunc: function (oldBoundBox, newBoundBox) {
+          // "boundBox" is an object with
+          // x, y, width, height and rotation properties
+          // transformer tool will try to fit nodes into that box
 
+          // the logic is simple, if new width is too big
+          // we will return previous state
+          if (Math.abs(newBoundBox.width) < MAX_WIDTH) {
+            return oldBoundBox;
+          }
 
-      var tr = new Konva.Transformer();
+          return newBoundBox;
+        },
+      });
       layer.add(tr);
-
-      // by default select all shapes
-      tr.nodes([]);
+      
 
       // add a new feature, lets add ability to draw selection rectangle
       var selectionRectangle = new Konva.Rect({

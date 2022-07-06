@@ -5,50 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="./test.css">
     <title>Document</title>
 </head>
 
 <body>
     <h1>Test Font</h1>
-    <select id="anchoEtiqueta">
-        <option value="">Seleccione el ancho</option>
-        <option value=12>12mm</option>
-        <option value=16>16mm</option>
-        <option value=36>37mm</option>
-        <option value=60>60mm</option>
-        <option value=70>70mm</option>
-        <option value=100>100mm</option>
-    </select>
-    <label for="altoEtiqueta">Alto de su etiqueta <input type="number" name="altoEtiqueta" id="altoEtiqueta"></label>
-    <label for="fondoEtiqueta">Fondo de su etiqueta <input type="color" name="fondoEtiqueta" id="fondoEtiqueta"></label>
 
-
-    <input type="file" accept="image/jpeg, image/png, image/jpg" id="inputLogo">
-
-
-
-    <label for="userBrand">Su marca<input type="text" name="userBrand" id="userBrand"></label>
-    <select id="fontEtiqueta">
-        <optgroup label="Cursiva">
-            <option value="">Seleccione una fuente</option>
-            <option value="allisonregular">Allison</option>
-            <option value="brock_scriptregular">Brock Script</option>
-            <option value="jewel_hillregular">Jewel Hill</option>
-            <option value="MA Sexy Regular">MA Sexy</option>
-            <option value="wildRide">WildRide</option>
-        </optgroup>
-    </select>
-    <label for="colorMarca">Color de texto <input type="color" name="colorMarca" id="colorMarca"></label>
-    <label for="conComposicion">Con composicion</label><input type="checkbox" id="conComposicion">
-
-
-    <button id="generateButton">Generar etiqueta</button>
-
-    <div id="display-image"></div>
-
-
-    <div id="container"></div>
+    <div class="design-app">
+        <div class="tag-creator__container">
+            <div class="tag-creator__section">
+                <h3>ORIENTACION</h3>
+                
+                <label for="etiquetaVertical" ><input type="radio" id="etiquetaVertical" name="orientacionEtiqueta" value="vertical" checked>Vertical</label>
+                
+                <label for="etiquetaHorizontal"> <input type="radio" id="etiquetaHorizontal" name="orientacionEtiqueta" value="horizontal">Horizontal</label>
+            </div>
+            <div class="tag-creator__section">
+                <h3>TAMAÑO</h3>
+                <label for="anchoEtiqueta">
+                    <select id="anchoEtiqueta" name="anchoEtiqueta">
+                        <option value="">Seleccione el ancho</option>
+                        <option value=12>12mm</option>
+                        <option value=16>16mm</option>
+                        <option value=18>18mm</option>
+                        <option value=20>20mm</option>
+                        <option value=36>37mm</option>
+                        <option value=60>60mm</option>
+                        <option value=70>70mm</option>
+                        <option value=100>100mm</option>
+                    </select>
+                </label>
+                <label for="altoEtiqueta">Alto de su etiqueta (en milimetros) <input type="number" name="altoEtiqueta" id="altoEtiqueta"></label>
+            </div>
+            <div class="tag-creator__section">
+                <h3>COLORES</h3>
+                <label for="fondoEtiqueta">Fondo de su etiqueta <input type="color" name="fondoEtiqueta" id="fondoEtiqueta"></label>
+                <label for="colorMarca">Color de texto <input type="color" name="colorMarca" id="colorMarca"></label>
+            </div>
+            <div class="tag-creator__section">
+                <h3>SU MARCA</h3>
+                <label for="userBrand">Su marca<input type="text" name="userBrand" id="userBrand"></label>
+                <select id="fontEtiqueta">
+                    <optgroup label="Cursiva">
+                        <option value="">Seleccione una fuente</option>
+                        <option value="allisonregular">Allison</option>
+                        <option value="brock_scriptregular">Brock Script</option>
+                        <option value="jewel_hillregular">Jewel Hill</option>
+                        <option value="MA Sexy Regular">MA Sexy</option>
+                        <option value="wildRide">WildRide</option>
+                    </optgroup>
+                </select>
+        
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="inputLogo">
+            </div>
+            <div class="tag-creator__section"><label for="conComposicion">Con composicion <input type="checkbox" id="conComposicion"></label></div>
+            <button id="generateButton">Generar etiqueta</button>
+        </div>
+        <div id="container" class="display-container"></div>
+    </div>
 
 
     <script src="https://unpkg.com/konva@8/konva.min.js"></script>
