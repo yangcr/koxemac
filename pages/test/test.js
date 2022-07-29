@@ -16,10 +16,10 @@ console.log(orientacionEtiqueta);
 let orientacionElegida = "vertical";
 
 orientacionEtiqueta.forEach(orientacion => {
-    orientacion.addEventListener('change', () => {
-        orientacionElegida = orientacion.value;
-        console.log(orientacionElegida);
-    });
+  orientacion.addEventListener('change', () => {
+    orientacionElegida = orientacion.value;
+    console.log(orientacionElegida);
+  });
 })
 
 
@@ -58,13 +58,22 @@ if ("fonts" in document) {
 
 
 const createTag = () => {
+  divContainer.style.width = "25mm";
+  divContainer.style.height = "80mm"
 
-  if (orientacionElegida == "vertical") {
-  divContainer.style.width = `${anchoEtiqueta.value}mm`;
-  divContainer.style.height = `${altoEtiqueta.value}mm`;
-  } else if (orientacionElegida == "horizontal") {
-  divContainer.style.width = `${altoEtiqueta.value}mm`;
-  divContainer.style.height = `${anchoEtiqueta.value}mm`;
+  switch (orientacionElegida) {
+    case "vertical":
+      divContainer.style.width = `${anchoEtiqueta.value}mm`;
+      divContainer.style.height = `${altoEtiqueta.value}mm`;
+
+      console.log("el alto es" + altoEtiqueta.value);
+      console.log("el ancho es " + anchoEtiqueta.value);
+      break;
+
+    case "horizontal":
+      divContainer.style.width = `${altoEtiqueta.value}mm`;
+    divContainer.style.height = `${anchoEtiqueta.value}mm`;
+      break;
   }
 
 
@@ -81,8 +90,8 @@ const createTag = () => {
   var imageObj = new Image();
   imageObj.onload = function () {
     var brand = new Konva.Image({
-      x: divContainer.width/2,
-      y: divContainer.height/2,
+      x: divContainer.width / 2,
+      y: divContainer.height / 2,
       image: imageObj,
       draggable: true,
       width: divContainer.width,
@@ -105,7 +114,7 @@ const createTag = () => {
       context.drawImage(img, 0, 0);
     }
     imageObj.src = imgSrc;
-    
+
   }
 
 
@@ -155,129 +164,129 @@ const createTag = () => {
   var MAX_WIDTH = 100;
 
 
-      var tr = new Konva.Transformer({
-        enabledAnchors: [
-          'top-left',
-          'top-right',
-          'bottom-left',
-          'bottom-right',
-        ],
-        boundBoxFunc: function (oldBoundBox, newBoundBox) {
-          // "boundBox" is an object with
-          // x, y, width, height and rotation properties
-          // transformer tool will try to fit nodes into that box
+  var tr = new Konva.Transformer({
+    enabledAnchors: [
+      'top-left',
+      'top-right',
+      'bottom-left',
+      'bottom-right',
+    ],
+    boundBoxFunc: function (oldBoundBox, newBoundBox) {
+      // "boundBox" is an object with
+      // x, y, width, height and rotation properties
+      // transformer tool will try to fit nodes into that box
 
-          // the logic is simple, if new width is too big
-          // we will return previous state
-          if (Math.abs(newBoundBox.width) < MAX_WIDTH) {
-            return oldBoundBox;
-          }
+      // the logic is simple, if new width is too big
+      // we will return previous state
+      if (Math.abs(newBoundBox.width) < MAX_WIDTH) {
+        return oldBoundBox;
+      }
 
-          return newBoundBox;
-        },
-      });
-      layer.add(tr);
-      
+      return newBoundBox;
+    },
+  });
+  layer.add(tr);
 
-      // add a new feature, lets add ability to draw selection rectangle
-      var selectionRectangle = new Konva.Rect({
-        fill: 'rgba(0,0,255,0.5)',
-        visible: false,
-      });
-      layer.add(selectionRectangle);
 
-      var x1, y1, x2, y2;
-      stage.on('mousedown touchstart', (e) => {
-        // do nothing if we mousedown on any shape
-        if (e.target !== stage) {
-          return;
-        }
-        e.evt.preventDefault();
-        x1 = stage.getPointerPosition().x;
-        y1 = stage.getPointerPosition().y;
-        x2 = stage.getPointerPosition().x;
-        y2 = stage.getPointerPosition().y;
+  // add a new feature, lets add ability to draw selection rectangle
+  var selectionRectangle = new Konva.Rect({
+    fill: 'rgba(0,0,255,0.5)',
+    visible: false,
+  });
+  layer.add(selectionRectangle);
 
-        selectionRectangle.visible(true);
-        selectionRectangle.width(0);
-        selectionRectangle.height(0);
-      });
+  var x1, y1, x2, y2;
+  stage.on('mousedown touchstart', (e) => {
+    // do nothing if we mousedown on any shape
+    if (e.target !== stage) {
+      return;
+    }
+    e.evt.preventDefault();
+    x1 = stage.getPointerPosition().x;
+    y1 = stage.getPointerPosition().y;
+    x2 = stage.getPointerPosition().x;
+    y2 = stage.getPointerPosition().y;
 
-      stage.on('mousemove touchmove', (e) => {
-        // do nothing if we didn't start selection
-        if (!selectionRectangle.visible()) {
-          return;
-        }
-        e.evt.preventDefault();
-        x2 = stage.getPointerPosition().x;
-        y2 = stage.getPointerPosition().y;
+    selectionRectangle.visible(true);
+    selectionRectangle.width(0);
+    selectionRectangle.height(0);
+  });
 
-        selectionRectangle.setAttrs({
-          x: Math.min(x1, x2),
-          y: Math.min(y1, y2),
-          width: Math.abs(x2 - x1),
-          height: Math.abs(y2 - y1),
-        });
-      });
+  stage.on('mousemove touchmove', (e) => {
+    // do nothing if we didn't start selection
+    if (!selectionRectangle.visible()) {
+      return;
+    }
+    e.evt.preventDefault();
+    x2 = stage.getPointerPosition().x;
+    y2 = stage.getPointerPosition().y;
 
-      stage.on('mouseup touchend', (e) => {
-        // do nothing if we didn't start selection
-        if (!selectionRectangle.visible()) {
-          return;
-        }
-        e.evt.preventDefault();
-        // update visibility in timeout, so we can check it in click event
-        setTimeout(() => {
-          selectionRectangle.visible(false);
-        });
+    selectionRectangle.setAttrs({
+      x: Math.min(x1, x2),
+      y: Math.min(y1, y2),
+      width: Math.abs(x2 - x1),
+      height: Math.abs(y2 - y1),
+    });
+  });
 
-        var shapes = stage.find('.rect');
-        var box = selectionRectangle.getClientRect();
-        var selected = shapes.filter((shape) =>
-          Konva.Util.haveIntersection(box, shape.getClientRect())
-        );
-        tr.nodes(selected);
-      });
+  stage.on('mouseup touchend', (e) => {
+    // do nothing if we didn't start selection
+    if (!selectionRectangle.visible()) {
+      return;
+    }
+    e.evt.preventDefault();
+    // update visibility in timeout, so we can check it in click event
+    setTimeout(() => {
+      selectionRectangle.visible(false);
+    });
 
-      // clicks should select/deselect shapes
-      stage.on('click tap', function (e) {
-        // if we are selecting with rect, do nothing
-        if (selectionRectangle.visible()) {
-          return;
-        }
+    var shapes = stage.find('.rect');
+    var box = selectionRectangle.getClientRect();
+    var selected = shapes.filter((shape) =>
+      Konva.Util.haveIntersection(box, shape.getClientRect())
+    );
+    tr.nodes(selected);
+  });
 
-        // if click on empty area - remove all selections
-        if (e.target === stage || e.target === rectBG) {
-          tr.nodes([]);
-          return;
-        }
+  // clicks should select/deselect shapes
+  stage.on('click tap', function (e) {
+    // if we are selecting with rect, do nothing
+    if (selectionRectangle.visible()) {
+      return;
+    }
 
-        // do nothing if clicked NOT on our rectangles
-        if (!e.target.hasName('rect')) {
-          return;
-        }
+    // if click on empty area - remove all selections
+    if (e.target === stage || e.target === rectBG) {
+      tr.nodes([]);
+      return;
+    }
 
-        // do we pressed shift or ctrl?
-        const metaPressed = e.evt.shiftKey || e.evt.ctrlKey || e.evt.metaKey;
-        const isSelected = tr.nodes().indexOf(e.target) >= 0;
+    // do nothing if clicked NOT on our rectangles
+    if (!e.target.hasName('rect')) {
+      return;
+    }
 
-        if (!metaPressed && !isSelected) {
-          // if no key pressed and the node is not selected
-          // select just one
-          tr.nodes([e.target]);
-        } else if (metaPressed && isSelected) {
-          // if we pressed keys and node was selected
-          // we need to remove it from selection:
-          const nodes = tr.nodes().slice(); // use slice to have new copy of array
-          // remove node from array
-          nodes.splice(nodes.indexOf(e.target), 1);
-          tr.nodes(nodes);
-        } else if (metaPressed && !isSelected) {
-          // add the node into selection
-          const nodes = tr.nodes().concat([e.target]);
-          tr.nodes(nodes);
-        }
-      });
+    // do we pressed shift or ctrl?
+    const metaPressed = e.evt.shiftKey || e.evt.ctrlKey || e.evt.metaKey;
+    const isSelected = tr.nodes().indexOf(e.target) >= 0;
+
+    if (!metaPressed && !isSelected) {
+      // if no key pressed and the node is not selected
+      // select just one
+      tr.nodes([e.target]);
+    } else if (metaPressed && isSelected) {
+      // if we pressed keys and node was selected
+      // we need to remove it from selection:
+      const nodes = tr.nodes().slice(); // use slice to have new copy of array
+      // remove node from array
+      nodes.splice(nodes.indexOf(e.target), 1);
+      tr.nodes(nodes);
+    } else if (metaPressed && !isSelected) {
+      // add the node into selection
+      const nodes = tr.nodes().concat([e.target]);
+      tr.nodes(nodes);
+    }
+  });
 
 
 

@@ -1,5 +1,5 @@
 body {
-  background-color: ivory;
+  background-color: #E6ECF7;
   box-sizing: border-box;
 }
 #canvas {
@@ -15,12 +15,25 @@ h1 {
   font-family: "bebas_neue_probold";
 }
 
+input[type="text"],
+input[type="number"],
+select {
+  width: 80%;
+}
+
 
 .tag-creator__container {
   display: flex;
   flex-direction: column;
   width: 350px;
   gap: 3em;
+  max-width: 800px;
+  height: 100%;
+  border-right: 1px solid black;
+  padding-right: 5em;
+
+  border: 1px solid red;
+
 }
 
 .design-app {
@@ -37,9 +50,9 @@ h1 {
   
 }
 
-.display-container {
-  min-width: 600px;
-  max-width: 800px;
+.canvas-container {
   display: flex;
-  flex-grow: 1;
+  width: 50%;
+  height: 80%;
+  justify-content: center;
 }
