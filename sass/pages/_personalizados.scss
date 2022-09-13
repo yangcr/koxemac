@@ -1,0 +1,19 @@
+.personalizados__hero {
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  justify-content: space-around;
+
+  .personalizados__content {
+    width: 40%;
+
+    .personalizados__hero-title {
+      text-align: left;
+    }
+  }
+
+  .personalizados__hero-image {
+    z-index: 2;
+    max-width: 500px;
+  }
+}
